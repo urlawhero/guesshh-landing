@@ -5,7 +5,7 @@ const siteLinks = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Features", href: "#features" },
   { label: "FAQ", href: "#faq" },
-  { label: "Play", href: "/play" },
+  { label: "Play", href: "https://play.guesshh.com" },
 ]
 
 const legalLinks = [

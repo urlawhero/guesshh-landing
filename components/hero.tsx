@@ -38,7 +38,7 @@ export function Hero() {
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <a
-            href="/play"
+            href="https://play.guesshh.com"
             className="group flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-all hover:scale-105 hover:opacity-90"
           >
             Play Now — It{"'"}s Free

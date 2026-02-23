@@ -45,7 +45,7 @@ export function Navbar() {
         </ul>
 
         <a
-          href="/play"
+          href="https://play.guesshh.com"
           className="hidden rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 md:inline-block"
         >
           Play Now
@@ -76,7 +76,7 @@ export function Navbar() {
             ))}
             <li className="mt-2">
               <a
-                href="/play"
+                href="https://play.guesshh.com"
                 className="block rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 Play Now

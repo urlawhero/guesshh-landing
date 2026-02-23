@@ -31,7 +31,7 @@ export function CTA() {
             download — just pure social deduction chaos.
           </p>
           <a
-            href="/play"
+            href="https://play.guesshh.com"
             className="group mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-all hover:scale-105 hover:opacity-90"
           >
             Start Playing Now
