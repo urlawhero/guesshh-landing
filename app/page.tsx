@@ -109,6 +109,15 @@ const faqJsonLd = {
         "text": "Yes! Everyone in the same room can join from any combination of browser, PWA, or native app — on any device. One player on Safari, another on Chrome, another on the installed app — it all works seamlessly. You just need the room code."
       },
     },
+    {
+      "@type": "Question",
+      "name": "Do I need an account to play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No account needed. Just share the room code with your friends, pick a nickname, and you are in. Nothing to sign up for, no email, no password."
+      },
+    },
+
 
   ],
 }
