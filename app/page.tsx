@@ -42,7 +42,7 @@ const faqJsonLd = {
       name: "Is Guesshh free to play?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes \u2014 100% free. No account needed, no subscription, no hidden costs. Just open the link and play.",
+        text: "Yes \u2014 100% free. No account needed, no hidden costs. Just open the link and play. Optional upgrades are available for players who want more: a 3-day pass, a monthly or yearly subscription, or a one-time lifetime purchase. These unlock all premium categories and remove ads, but are never required to enjoy the game.",
       },
     },
     {
@@ -101,6 +101,15 @@ const faqJsonLd = {
         text: "Head to the \u201CPlay Your Way\u201D section on this page and follow the steps for your device. Guesshh is a Progressive Web App (PWA) \u2014 no App Store needed. Full installation instructions are listed there for both iPhone and Android.",
       },
     },
+    {
+      "@type": "Question",
+      "name": "Can players join from different devices or browsers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Everyone in the same room can join from any combination of browser, PWA, or native app — on any device. One player on Safari, another on Chrome, another on the installed app — it all works seamlessly. You just need the room code."
+      },
+    },
+
   ],
 }
 
