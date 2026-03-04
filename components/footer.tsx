@@ -11,6 +11,7 @@ const siteLinks = [
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms of Service", href: "/terms" },
+  { label: "Cookies", href: "/cookies" },
 ]
 
 export function Footer() {
