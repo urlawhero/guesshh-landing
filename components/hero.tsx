@@ -12,18 +12,15 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center text-center">
-        <picture>
-          <source srcSet="/guesshh-logo-nb.webp" type="image/webp" />
-          <Image
-            src="/guesshh-logo-nb.png"
-            alt="Guesshh"
-            width={240}
-            height={240}
-            priority
-            fetchPriority="high"
-            className="mb-8 h-40 w-auto md:h-56 lg:h-64"
-          />
-        </picture>
+        <Image
+          src="/guesshh-logo-nb.webp"
+          alt="Guesshh"
+          width={240}
+          height={240}
+          priority
+          fetchPriority="high"
+          className="mb-8 h-40 w-auto md:h-56 lg:h-64"
+        />
 
         <h1 className="text-balance text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
           Find the Spy.

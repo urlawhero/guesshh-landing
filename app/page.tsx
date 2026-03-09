@@ -33,6 +33,28 @@ const webAppJsonLd = {
   ],
 }
 
+const softwareAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Guesshh",
+  operatingSystem: "Web, iOS, Android",
+  applicationCategory: "GameApplication",
+  applicationSubCategory: "Party Game",
+  url: "https://guesshh.com",
+  description:
+    "Free multiplayer social deduction party game for 3–25 players. No account needed. Find the spy before they escape!",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+  },
+  author: {
+    "@type": "Organization",
+    name: "For You Digital Solutions",
+    url: "https://foryoudigitalsolutions.com",
+  },
+}
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -110,6 +132,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
       />
       <script
         type="application/ld+json"

@@ -15,22 +15,23 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Guesshh \u2013 The Social Deduction Party Game",
+    default: "Guesshh | Find the Spy & Impostor Party Game",
     template: "%s | Guesshh",
   },
   description:
-    "Play Guesshh free \u2014 the online multiplayer social deduction game. Find the spy, bluff your friends, and outsmart everyone. No account needed.",
+    "Play Guesshh, the ultimate free online social deduction party game. Find the spy or impostor among your friends in this browser game for 3-25 players. No downloads, instant fun.",
   keywords: [
-    "spy game",
     "social deduction game",
-    "party game online",
+    "impostor game",
+    "find the imposter",
+    "hidden role game",
     "multiplayer party game",
-    "find the spy",
-    "word guessing game",
-    "free online game",
-    "guesshh",
+    "online browser game",
+    "spy game",
     "play with friends online",
-    "spyfall alternative",
+    "free party game",
+    "no download multiplayer game",
+    "Guesshh",
   ],
   metadataBase: new URL("https://guesshh.com"),
   alternates: {
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Guesshh",
-    title: "Guesshh \u2013 Can You Find the Spy?",
+    title: "Guesshh | Find the Impostor in this Free Party Game",
     description:
-      "The free multiplayer social deduction party game. No account needed. Play with up to 25 friends instantly.",
+      "Gather your friends, ask questions, and find the hidden spy or impostor. Free browser-based social deduction game for 3-25 players. No account required.",
     url: "https://guesshh.com",
     locale: "en_US",
     images: [
@@ -61,15 +62,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@guesshh",
     creator: "@guesshh",
-    title: "Guesshh \u2013 Can You Find the Spy?",
+    title: "Guesshh | Free Multiplayer Party Game",
     description:
-      "Free multiplayer social deduction game. Play with friends instantly \u2014 no account, no download.",
-    images: [
-      {
-        url: "/og-image.png",
-        alt: "Guesshh game screenshot",
-      },
-    ],
+      "Can you find the impostor before they escape? Instant browser play for 3-25 players.",
+    images: ["/og-image.png"],
   },
   appleWebApp: {
     capable: true,
@@ -105,6 +101,18 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MFDCQ8G654"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MFDCQ8G654');
+          `}
+        </Script>
       </head>
       <body className="font-sans antialiased">
         {children}
