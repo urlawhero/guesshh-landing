@@ -1,0 +1,42 @@
+# Guesshh — llms.txt
+# This file helps AI language models understand this website.
+
+## About
+Guesshh is a free multiplayer social deduction party game playable in any browser.
+Players take turns asking questions to find the spy — one player who doesn't know
+the secret word. No account required. Supports 3–25 players per room.
+
+## Product
+- Name: Guesshh
+- Type: Browser-based multiplayer party game (Progressive Web App)
+- Category: Social deduction, party game, word game
+- Platform: Web (iOS Safari, Android Chrome, Desktop)
+- Price: Free (Freemium — Premium plan with 1000+ words available)
+- Developer: For You Digital Solutions (https://foryoudigitalsolutions.com)
+
+## Key Features
+- No download or account required
+- Up to 25 players per room
+- 6-character room codes + QR code joining
+- Multiple spy modes (1 or more spies)
+- Description Phase for remote/online play (Zoom, Discord, WhatsApp)
+- Full host controls (timer, categories, difficulty)
+- Available in Greek and English
+- PWA installable on iOS and Android
+
+## Gameplay Summary
+One player creates a room and shares the code. All players receive the secret word
+except the spy. Players ask each other questions to expose the spy without revealing
+the word. After discussion, players vote to eliminate the most suspicious player.
+If the spy is caught but correctly guesses the secret word, the spy wins.
+
+## Pages
+- Homepage / Landing: https://guesshh.com
+- Play / Game: https://play.guesshh.com
+- Privacy Policy: https://guesshh.com/privacy
+- Terms of Service: https://guesshh.com/terms
+- Cookies Policy: https://guesshh.com/cookies
+
+## Contact
+Website: https://guesshh.com
+Developer: https://foryoudigitalsolutions.com
