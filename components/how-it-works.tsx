@@ -51,7 +51,7 @@ export function HowItWorks() {
           {steps.map((item) => (
             <div
               key={item.step}
-              className="group relative rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/40 hover:bg-card/80"
+              className="group relative rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-all hover:border-primary/40 hover:bg-white/[0.08]"
             >
               <div className="mb-5 flex items-center justify-between">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">

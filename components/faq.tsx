@@ -68,7 +68,7 @@ export function FAQ() {
             <AccordionItem
               key={i}
               value={`faq-${i}`}
-              className="border-border"
+              className="border-white/10"
             >
               <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:text-primary hover:no-underline">
                 {faq.question}

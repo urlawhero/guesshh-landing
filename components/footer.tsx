@@ -16,7 +16,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t-2 border-green-400/30 bg-zinc-950 px-6 py-16">
+    <footer className="border-t-2 border-green-400/30 bg-background px-6 py-16">
       <div className="mx-auto max-w-6xl">
         {/* Desktop layout: 3 columns */}
         <div className="hidden md:grid md:grid-cols-3 md:gap-12">
@@ -146,7 +146,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar: copyright + developer */}
-        <div className="mt-12 flex flex-col items-center gap-2 border-t border-zinc-800/60 pt-8">
+        <div className="mt-12 flex flex-col items-center gap-2 border-t border-slate-800 pt-8">
           <p className="text-sm text-zinc-500">
             &copy; {new Date().getFullYear()} Guesshh. All rights reserved.
           </p>

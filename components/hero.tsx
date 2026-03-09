@@ -11,6 +11,13 @@ export function Hero() {
         aria-hidden="true"
       />
 
+      {/* Green radial glow behind content */}
+      <div
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full opacity-[0.18]"
+        style={{ background: "radial-gradient(circle at center, #4ade80 0%, transparent 65%)" }}
+        aria-hidden="true"
+      />
+
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center text-center">
         <Image
           src="/guesshh-logo-nb.webp"

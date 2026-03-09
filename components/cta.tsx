@@ -10,7 +10,7 @@ export function CTA() {
       }}
     >
       <div
-        className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-primary/20 bg-card p-12 text-center md:p-20"
+        className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-12 text-center backdrop-blur-md md:p-20"
         style={{ boxShadow: "0 0 60px rgba(74,222,128,0.12)" }}
       >
         {/* Background glow inside card */}

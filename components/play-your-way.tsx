@@ -24,7 +24,7 @@ export function PlayYourWay() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Install Card */}
-          <div className="rounded-2xl border border-border bg-card p-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
               <Smartphone className="h-6 w-6 text-primary" />
             </div>
@@ -115,7 +115,7 @@ export function PlayYourWay() {
           </div>
 
           {/* Desktop / Browser Card */}
-          <div className="rounded-2xl border border-border bg-card p-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
               <Monitor className="h-6 w-6 text-primary" />
             </div>

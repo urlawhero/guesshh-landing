@@ -126,7 +126,7 @@ export function GamePreview() {
           >
             {screens.map((screen) => (
               <div key={screen.label} className="flex-none">
-                <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
                   <Image
                     src={screen.src}
                     alt={screen.alt}
@@ -146,7 +146,7 @@ export function GamePreview() {
         {/* Mobile: single view with tabs */}
         <div className="md:hidden">
           <div className="flex justify-center">
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
               <Image
                 src={screens[activeIdx].src}
                 alt={screens[activeIdx].alt}
