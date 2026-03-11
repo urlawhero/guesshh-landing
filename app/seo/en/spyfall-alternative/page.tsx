@@ -12,37 +12,28 @@ export default function SpyfallAlternativePage() {
             title="The Best Free Spyfall Alternative"
             subtitle="Discover the ultimate social deduction experience. No downloads, no accounts—just pure tactical bluffing with your friends."
         >
-            <h2>Why Guesshh is the Best Spyfall Alternative</h2>
-            <p>
-                If you love the classic game of <strong>Spyfall</strong>, you'll feel right at home with Guesshh. We've taken the core mechanics of social deduction and hidden roles and built a modern, browser-based platform that makes playing easier than ever.
-            </p>
-
-            <h3>Instant Play, Anywhere</h3>
-            <p>
-                Unlike original Spyfall which often requires physical cards or specialized apps, Guesshh works entirely in your mobile or desktop browser. Whether you're at a house party, on a Discord call, or waiting in line, you can start a game in seconds.
-            </p>
-
+            <h2>Why We Love Social Deduction Games</h2>
+            <p>There is nothing quite like the tension of a good social deduction game. The accusations, the bluffing, and the sudden realization that your best friend has been lying to your face for the last ten minutes. Games like Spyfall pioneered this genre for party game nights, but they often come with a frustrating hurdle: getting everyone to download an app.</p>
+            
+            <h2>The Problem with Most Party Game Apps</h2>
+            <p>You’re at a cafe, a bar, or hosting a game night at home. You want to start a game quickly, but half the group has to clear space on their phones, someone forgot their Apple ID password, and another person has an Android device that isn't supported. The momentum of the night dies before the game even begins.</p>
+            
+            <h2>Enter Guesshh: The Frictionless Spyfall Alternative</h2>
+            <p>Guesshh was built specifically to solve this problem. It takes the core, thrilling mechanics of finding a hidden spy and puts it directly in your mobile browser. Here is why groups are making the switch:</p>
+            
+            <ul>
+              <li><strong>Instant Join:</strong> One person taps "Create Room" and shares a 6-letter code or a QR code. Everyone else joins instantly via Safari or Chrome.</li>
+              <li><strong>Massive Groups:</strong> While many games cap out at 8 or 10 people, Guesshh supports up to <strong>25 players</strong> in a single room.</li>
+              <li><strong>Custom Spy Modes:</strong> Got a big group? Add multiple spies to the game to create maximum chaos and confusion.</li>
+              <li><strong>Remote Play Ready:</strong> Playing over a Zoom or Discord call? Enable the "Description Phase" so players can type their clues before voting begins.</li>
+            </ul>
+            
             <h3>How it Works</h3>
-            <ul>
-                <li><strong>Hidden Roles:</strong> One player is the Spy; everyone else knows the secret location/word.</li>
-                <li><strong>Strategic Questioning:</strong> Ask clever questions to identify the spy without giving away the secret word.</li>
-                <li><strong>The Guess:</strong> The Spy wins if they figure out the secret word, or if the group fails to catch them.</li>
-            </ul>
+            <p>If you've played Spyfall, you already know how to play Guesshh. Everyone in the room receives a secret word on their screen—except the Spy. Players take turns asking each other clever questions. Your goal is to prove you know the word without making it so obvious that the Spy figures it out. After the discussion, everyone votes. If the Spy is caught, they get one final chance to guess the secret word to steal the win.</p>
+            
+            <p>No downloads. No accounts. Just pure social deduction.</p>
 
-            <blockquote>
-                "The best party games are the ones that require zero setup and maximum interaction. Guesshh delivers exactly that."
-            </blockquote>
-
-            <h2>Features You'll Love</h2>
-            <ul>
-                <li><strong>Cross-Platform:</strong> Play on iOS, Android, Windows, or Mac.</li>
-                <li><strong>Massive Groups:</strong> Support for up to 25 players (perfect for large gatherings).</li>
-                <li><strong>Custom Categories:</strong> From "Travel" to "Movies", choose the themes your group loves most.</li>
-            </ul>
-
-            <p>
-                Ready to catch the spy? <strong>Start your free Guesshh room now and see why thousands of players are making the switch.</strong>
-            </p>
         </SeoPageLayout>
     )
 }
+
