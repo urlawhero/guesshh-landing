@@ -1,4 +1,4 @@
-import { SeoPageLayout } from "@/components/SeoPageLayout"
+import SeoPageLayout from "@/components/SeoPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -36,4 +36,5 @@ export default function SpyfallAlternativePage() {
         </SeoPageLayout>
     )
 }
+
 
