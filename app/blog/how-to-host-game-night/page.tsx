@@ -68,7 +68,7 @@ export default function BlogPostPage() {
                         Start a free Guesshh room now and invite your friends instantly. No account required.
                     </p>
                     <Link
-                        href="/play"
+                        href="https://play.guesshh.com"
                         className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-bold text-[#050816] transition-transform hover:scale-105 active:scale-95"
                     >
                         Start Playing Free
@@ -78,3 +78,4 @@ export default function BlogPostPage() {
         </div>
     )
 }
+
