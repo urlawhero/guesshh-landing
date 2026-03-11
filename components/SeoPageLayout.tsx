@@ -8,7 +8,7 @@ interface SeoPageLayoutProps {
   children: React.ReactNode
 }
 
-export function SeoPageLayout({ title, subtitle, children }: SeoPageLayoutProps) {
+export default function SeoPageLayout({ title, subtitle, children }: SeoPageLayoutProps) {
   return (
     <div className="min-h-screen bg-[#050816] text-white selection:bg-primary/30">
       {/* Hero Section with Radial Glow */}
@@ -79,3 +79,4 @@ export function SeoPageLayout({ title, subtitle, children }: SeoPageLayoutProps)
     </div>
   )
 }
+
