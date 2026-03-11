@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
+  { label: "Blog", href: "/blog" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Preview", href: "#preview" },
   { label: "Features", href: "#features" },
