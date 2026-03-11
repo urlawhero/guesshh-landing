@@ -22,13 +22,6 @@ const posts = [
         date: "March 05, 2026",
         excerpt: "Master the secrets behind becoming an unstoppable spy in Guesshh.",
         image: "/og-image.png"
-    },
-    {
-        title: "What's New in Guesshh v2.0",
-        slug: "whats-new-v2",
-        date: "February 28, 2026",
-        excerpt: "Check out the latest features, categories, and improvements we've added.",
-        image: "/og-image.png"
     }
 ]
 
@@ -83,3 +76,4 @@ export default function BlogIndexPage() {
         </div>
     )
 }
+
