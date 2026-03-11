@@ -30,7 +30,7 @@ export default function BlogPostPage() {
                 </main>
                 <div className="mx-auto max-w-3xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 text-center">
                     <h3 className="mb-4 text-2xl font-bold text-white">Think you can fool your friends?</h3>
-                    <Link href="/play" className="inline-flex h-12 items-center justify-center rounded-full bg-[#4ade80] px-8 font-bold text-[#050816] transition-transform hover:scale-105">Play as the Spy Now</Link>
+                    <Link href="https://play.guesshh.com" className="inline-flex h-12 items-center justify-center rounded-full bg-[#4ade80] px-8 font-bold text-[#050816] transition-transform hover:scale-105">Play as the Spy Now</Link>
                 </div>
             </div>
         </div>
