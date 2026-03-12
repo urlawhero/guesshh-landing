@@ -6,28 +6,28 @@ const steps = [
     step: "01",
     title: "Create or Join a Room",
     description:
-      "One player creates a room and shares the link or QR code. Everyone else joins in seconds — no sign-up required.",
+      "One player creates a room. Everyone else joins on their own phones, or you can add players locally to play on a single device.",
   },
   {
     icon: MessageCircleQuestion,
     step: "02",
     title: "Get Your Role & Clue",
     description:
-      "Everyone receives the same secret word — except the spy, who gets nothing. Blend in or figure out who is faking it.",
+      "Everyone receives the secret word — except the spy. Keep your screen hidden, blend in, or figure out who is faking it.",
   },
   {
     icon: Vote,
     step: "03",
     title: "Discuss & Vote",
     description:
-      "Ask questions, give subtle clues, and watch for suspicious answers. When time is up, vote on who you think the spy is.",
+      "Ask questions out loud, or use the Description Phase to type your clues secretly. When time is up, vote for the spy.",
   },
   {
     icon: Trophy,
     step: "04",
     title: "Reveal & Score",
     description:
-      "If the spy is caught, they get one last chance to guess the word. Guess right? Spy wins. Wrong? Innocents take the round.",
+      "If the spy is caught, they get one final chance to guess the word. Guess right? The spy wins. Wrong? Innocents take the round.",
   },
 ]
 
