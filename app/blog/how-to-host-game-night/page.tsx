@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function BlogPostPage() {
     return (
-        <div className="min-h-screen bg-[#050816] py-20 md:py-32">
+        <div className="min-h-screen bg-background py-20 md:py-32">
             <div className="container mx-auto px-6">
                 <Link
                     href="/blog"
@@ -78,4 +78,5 @@ export default function BlogPostPage() {
         </div>
     )
 }
+
 
