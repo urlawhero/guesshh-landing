@@ -39,10 +39,18 @@ export default function BlogIndexPage() {
                     Back to Home
                 </Link>
 
-                <header className="mb-16 text-center">
-                    <h1 className="mb-4 text-4xl font-bold tracking-tight text-white md:text-6xl">Guesshh Blog</h1>
-                    <p className="text-lg text-slate-400">Insights, tips, and updates for the best social deduction experience.</p>
+                <header className="mb-16 text-center relative">
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(74,222,128,0.12)_0%,transparent_60%)]" />
+                  <div className="relative">
+                    <h1 className="mb-4 text-4xl font-bold tracking-tight text-white md:text-6xl">
+                      Guesshh Blog
+                    </h1>
+                    <p className="text-lg text-slate-400">
+                      Insights, tips, and updates for the best social deduction experience.
+                    </p>
+                  </div>
                 </header>
+
 
                 <div className="grid gap-8 md:grid-cols-3">
                     {posts.map((post) => (
@@ -76,5 +84,6 @@ export default function BlogIndexPage() {
         </div>
     )
 }
+
 
 
