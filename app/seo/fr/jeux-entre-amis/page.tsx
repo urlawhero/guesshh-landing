@@ -11,6 +11,9 @@ export default function JeuxEntreAmisPage() {
     <SeoPageLayout 
       title="Les Meilleurs Jeux à Jouer Entre Amis" 
       subtitle="Pas besoin de télécharger d'application. Rejoignez une partie directement depuis votre navigateur et trouvez l'espion."
+      lang="fr"
+      playButtonText="Jouer Gratuitement"
+      backButtonText="Retour à l'Accueil"
     >
       <h2>Le Jeu de Soirée Parfait</h2>
       <p>Vous êtes en soirée, dans un bar ou sur un appel Discord avec vos amis, et vous cherchez un jeu rapide pour mettre l'ambiance ? Les jeux de déduction sociale (bluff et mystère) sont la meilleure solution. Mais forcer tout le monde à créer un compte et télécharger une application casse toujours le rythme.</p>
