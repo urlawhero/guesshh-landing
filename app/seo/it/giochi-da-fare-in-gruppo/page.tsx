@@ -11,6 +11,9 @@ export default function GiochiInGruppoPage() {
     <SeoPageLayout 
       title="Il Gioco Perfetto da Fare in Gruppo" 
       subtitle="Siete al bar, in casa o su una chiamata Discord e non sapete cosa fare? Giocate direttamente dal browser del vostro telefono. Nessuna app da scaricare."
+      lang="it"
+      playButtonText="Gioca Ora Gratis"
+      backButtonText="Torna alla Home"
     >
       <h2>Perché i giochi di deduzione sociale sono i migliori</h2>
       <p>I classici giochi da tavolo sono fantastici, ma richiedono preparazione. I giochi di deduzione sociale, dove devi capire chi sta mentendo, sono perfetti per animare la serata in pochi secondi. Il problema? Spesso costringono tutti a scaricare un'app pesantissima e creare un account.</p>
