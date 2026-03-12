@@ -131,9 +131,18 @@ export function PlayYourWay() {
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">
                   1
                 </span>
-                <p className="text-sm text-zinc-400">
-                  Visit <span className="font-medium text-foreground">play.guesshh.com</span> on your device
-                </p>
+                <p className="text-sm text-zinc-400 mt-0.5">
+                Visit{" "}
+                <a 
+                  href="https://play.guesshh.com" 
+                  target="_blank"
+                  className="font-bold text-[#4ade80] hover:underline"
+                >
+                  play.guesshh.com
+                </a>{" "}
+                on your device
+              </p>
+
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">
