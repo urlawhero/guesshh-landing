@@ -11,6 +11,9 @@ export default function PartyspieleGruppenPage() {
     <SeoPageLayout 
       title="Das Ultimative Partyspiel für deine Gruppe" 
       subtitle="Finde den Spion, bluffe deine Freunde und gewinne. Keine App-Downloads, keine Accounts – einfach sofort im Browser spielen."
+      lang="de"
+      playButtonText="Jetzt Kostenlos Spielen"
+      backButtonText="Zurück zur Startseite"
     >
       <h2>Warum Social-Deduction-Spiele die besten sind</h2>
       <p>Egal, ob ihr gemütlich zu Hause sitzt, in einer Bar seid oder über Discord sprecht: Es gibt nichts Besseres als ein Spiel, bei dem man herausfinden muss, wer am Tisch lügt. Das Problem bei den meisten Spielen wie Werwolf oder Spyfall? Man muss entweder mühsam Karten austeilen oder alle zwingen, eine riesige App herunterzuladen.</p>
