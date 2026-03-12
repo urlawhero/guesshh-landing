@@ -27,7 +27,7 @@ const posts = [
 
 export default function BlogIndexPage() {
     return (
-        <div className="min-h-screen bg-[#050816] py-20 md:py-32">
+        <div className="min-h-screen bg-background py-20 md:py-32">
             <div className="container mx-auto px-6">
                 
                 {/* Back Button */}
@@ -76,4 +76,5 @@ export default function BlogIndexPage() {
         </div>
     )
 }
+
 
