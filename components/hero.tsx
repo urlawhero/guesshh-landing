@@ -1,14 +1,36 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
 
 export function Hero() {
+  const containerRef = useRef<HTMLElement>(null)
+  
+  // Track scroll progress within the Hero section
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  })
+
+  // Map the scroll progress to a rotation angle.
+  // When at the top (0), it's tilted at -6 degrees.
+  // As you scroll down (to 0.4), it straightens to 0 degrees.
+  const rotate = useTransform(scrollYProgress, [0, 0.4], [-6, 0])
+  // We also add a slight parallax effect moving it up slightly
+  const y = useTransform(scrollYProgress, [0, 0.5], [20, -20])
+
   return (
-    <section className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 bg-background">
-      {/* Subtle radial glow matching the blog */}
+    <section 
+      ref={containerRef}
+      className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 bg-background"
+    >
+      {/* Subtle radial glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_40%,rgba(74,222,128,0.12)_0%,transparent_100%)] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
           
           {/* LEFT COLUMN: Text and CTAs */}
           <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
@@ -58,12 +80,14 @@ export function Hero() {
             {/* Background decorative blob */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#4ade80]/20 blur-[100px] rounded-full pointer-events-none" />
             
-            {/* The Phone Mockup */}
-            <div className="relative z-10 rounded-[2.5rem] border-8 border-slate-900 bg-slate-950 shadow-2xl overflow-hidden aspect-[9/19] transform rotate-[-2deg] transition-transform hover:rotate-0 duration-500">
+            {/* The Phone Mockup Animated Container */}
+            <motion.div 
+              style={{ rotate, y }}
+              className="relative z-10 rounded-[2.5rem] border-8 border-slate-900 bg-slate-950 shadow-2xl overflow-hidden aspect-[9/19] hover:rotate-0 transition-transform duration-500"
+            >
               {/* Notch */}
               <div className="absolute top-0 inset-x-0 h-6 bg-slate-900 rounded-b-2xl w-32 mx-auto z-20"></div>
               
-              {/* We use your existing game-preview image here */}
               <Image 
                 src="/screenshots/lobby.jpg" 
                 alt="Guesshh Game Lobby" 
@@ -71,18 +95,24 @@ export function Hero() {
                 className="object-cover"
                 priority
               />
-            </div>
+            </motion.div>
 
             {/* Floating Badges */}
-            <div className="absolute -right-6 top-20 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transform rotate-[4deg] animate-pulse">
-              <span className="flex h-2.5 w-2.5 rounded-full bg-[#4ade80]"></span>
+            <motion.div 
+              style={{ y: useTransform(scrollYProgress, [0, 1], [0, -40]) }}
+              className="absolute -right-6 top-20 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transform rotate-[4deg]"
+            >
+              <span className="flex h-2.5 w-2.5 rounded-full bg-[#4ade80] animate-pulse"></span>
               <span className="text-white text-sm font-medium text-nowrap">8 Players Online</span>
-            </div>
+            </motion.div>
 
-            <div className="absolute -left-8 bottom-32 z-20 bg-red-500/10 backdrop-blur-md border border-red-500/30 px-4 py-2 rounded-2xl shadow-lg transform rotate-[-6deg]">
+            <motion.div 
+              style={{ y: useTransform(scrollYProgress, [0, 1], [0, 40]) }}
+              className="absolute -left-8 bottom-32 z-20 bg-red-500/10 backdrop-blur-md border border-red-500/30 px-4 py-2 rounded-2xl shadow-lg transform rotate-[-6deg]"
+            >
               <span className="text-red-400 text-sm font-bold block">🕵️ Alert</span>
               <span className="text-white text-xs">You are the Spy!</span>
-            </div>
+            </motion.div>
           </div>
 
         </div>
