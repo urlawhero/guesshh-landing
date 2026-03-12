@@ -11,6 +11,9 @@ export default function JuegosConAmigosPage() {
     <SeoPageLayout 
       title="El Juego Definitivo Para Jugar Con Amigos" 
       subtitle="Sin descargas. Sin cuentas. Crea una sala en segundos y descubre quién de tus amigos es el mejor mintiendo."
+      lang="es"
+      playButtonText="Juega Gratis Ahora"
+      backButtonText="Volver al Inicio"
     >
       <h2>El problema de los juegos para fiestas</h2>
       <p>Estás reunido con tus amigos o en una videollamada y alguien sugiere jugar a algo. De repente, la mitad del grupo tiene que borrar fotos para instalar una aplicación, alguien olvida su contraseña y el momento de diversión se arruina antes de empezar.</p>
