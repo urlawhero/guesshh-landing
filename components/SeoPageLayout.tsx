@@ -21,7 +21,7 @@ export default function SeoPageLayout({
 }: SeoPageLayoutProps) {
   
   // Dynamically generate the URL based on the lang prop
-  const playUrl = lang ? `https://play.guesshh.com/?lang=${lang}` : "https://play.guesshh.com"
+  const playUrl = lang ? `https://play.guesshh.com/home/?lang=${lang}` : "https://play.guesshh.com"
 
   return (
     <div className="min-h-screen bg-[#050816] text-white selection:bg-primary/30">
@@ -92,3 +92,4 @@ export default function SeoPageLayout({
     </div>
   )
 }
+
