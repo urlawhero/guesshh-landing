@@ -13,7 +13,7 @@ const steps = [
     step: "02",
     title: "Get Your Role & Clue",
     description:
-      "Everyone receives the secret word — except the spy. Keep your screen hidden, blend in, or figure out who is faking it.",
+      "Everyone receives the secret word - except the spy. Keep your screen hidden, blend in, or figure out who is faking it.",
   },
   {
     icon: Vote,
