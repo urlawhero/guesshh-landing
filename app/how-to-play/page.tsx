@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Play Guesshh | Social Deduction Party Game Guide",
     description:
-      "Learn how to play Guesshh — the free browser-based social deduction game. Find the spy, ask clever questions, and bluff your way to victory.",
+      "Learn how to play Guesshh - the free browser-based social deduction game. Find the spy, ask clever questions, and bluff your way to victory.",
     url: "https://guesshh.com/how-to-play",
   },
 }
@@ -18,12 +18,12 @@ export default function HowToPlayPage() {
   return (
     <SeoPageLayout
       title="How to Play Guesshh"
-      description="Everything you need to know to set up and play your first game — from creating a room to catching the spy."
+      description="Everything you need to know to set up and play your first game - from creating a room to catching the spy."
     >
       <h2>What Is Guesshh?</h2>
       <p>
         Guesshh is a free online social deduction party game for 3 to 25 players. One player is secretly
-        assigned as the <strong>Spy</strong> — they don&apos;t know the secret word. Everyone else is an
+        assigned as the <strong>Spy</strong> - they don&apos;t know the secret word. Everyone else is an
         <strong> Innocent</strong> who does. The goal: innocents must find the spy before the spy figures
         out the word and escapes.
       </p>
@@ -32,7 +32,7 @@ export default function HowToPlayPage() {
       <h3>Online Multiplayer (Recommended)</h3>
       <ol>
         <li>Go to <a href="https://play.guesshh.com" target="_blank" rel="noopener noreferrer">play.guesshh.com</a> and tap <strong>Create</strong>.</li>
-        <li>Share the room code or QR code with your friends — they tap <strong>Join</strong> and enter the code.</li>
+        <li>Share the room code or QR code with your friends - they tap <strong>Join</strong> and enter the code.</li>
         <li>Once everyone has joined, the host selects a category and taps <strong>Start Game</strong>.</li>
         <li>Each player privately views their role on their own device.</li>
       </ol>
@@ -41,7 +41,7 @@ export default function HowToPlayPage() {
       <ol>
         <li>From the home screen tap <strong>New Game</strong>.</li>
         <li>Add player names and choose the number of spies.</li>
-        <li>Pass the device to each player in turn — they tap their name, view their role privately, then pass it on.</li>
+        <li>Pass the device to each player in turn - they tap their name, view their role privately, then pass it on.</li>
       </ol>
 
       <h2>The Three Phases of a Round</h2>
@@ -54,7 +54,7 @@ export default function HowToPlayPage() {
       <h3>2. Discussion Phase</h3>
       <p>
         Players take turns asking each other questions. Innocents want to prove they know the word without
-        being too obvious — the spy is listening and trying to deduce the word. The host can set a custom
+        being too obvious - the spy is listening and trying to deduce the word. The host can set a custom
         discussion timer (1–10 minutes).
       </p>
       <p>Good example questions:</p>
@@ -67,7 +67,7 @@ export default function HowToPlayPage() {
       <h3>3. Voting Phase</h3>
       <p>
         After discussion, everyone simultaneously votes for who they think is the spy. The player with the
-        most votes is eliminated. If it&apos;s the spy — the innocents win! If it&apos;s not — the spy wins.
+        most votes is eliminated. If it&apos;s the spy - the innocents win! If it&apos;s not - the spy wins.
       </p>
       <p>
         Before being eliminated, the accused spy gets one chance to guess the secret word. A correct guess
@@ -82,9 +82,9 @@ export default function HowToPlayPage() {
 
       <h2>Tips for Innocents</h2>
       <ul>
-        <li>Give answers that prove you know the word — but don&apos;t make it too easy for the spy.</li>
+        <li>Give answers that prove you know the word - but don&apos;t make it too easy for the spy.</li>
         <li>Watch for vague or deflecting answers from other players.</li>
-        <li>Don&apos;t accuse too early — gather evidence first.</li>
+        <li>Don&apos;t accuse too early - gather evidence first.</li>
       </ul>
 
       <h2>Tips for the Spy</h2>
@@ -99,7 +99,7 @@ export default function HowToPlayPage() {
         <li><strong>Number of Spies:</strong> 1 spy per 3 players is recommended. You can increase this for larger groups.</li>
         <li><strong>Impostor Difficulty:</strong> Standard (spy sees nothing) or Easy Mode (spy sees a hint).</li>
         <li><strong>Discussion Time:</strong> Set between 1 and 10 minutes.</li>
-        <li><strong>Categories:</strong> Choose from Food &amp; Drinks, Movies &amp; TV, Places &amp; Travel, and more — or pick Random.</li>
+        <li><strong>Categories:</strong> Choose from Food &amp; Drinks, Movies &amp; TV, Places &amp; Travel, and more - or pick Random.</li>
       </ul>
 
       <h2>Ready to Play?</h2>
