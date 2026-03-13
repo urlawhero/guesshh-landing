@@ -33,7 +33,7 @@ export default function BlogPostPage() {
                 {/* Article Content */}
                 <main className="mx-auto max-w-3xl prose prose-invert prose-slate prose-headings:text-white prose-p:text-slate-400 prose-strong:text-white prose-a:text-primary hover:prose-a:underline mb-20">
                     <p>
-                        Game nights are more than just an excuse to play—they're a way to connect, laugh, and create shared memories. But a great game night doesn't just happen by accident. It requires a little bit of planning and a lot of focus on the social experience.
+                        Game nights are more than just an excuse to play-they're a way to connect, laugh, and create shared memories. But a great game night doesn't just happen by accident. It requires a little bit of planning and a lot of focus on the social experience.
                     </p>
 
                     <h2>1. Curating the Guest List</h2>
@@ -43,7 +43,7 @@ export default function BlogPostPage() {
 
                     <h2>2. Picking the Right Games</h2>
                     <p>
-                        Start with something simple. You don't want to spend the first hour reading a 40-page rulebook. This is why we created <strong>Guesshh</strong>. It's built to be picked up instantly. No downloads, no physical cards—just open your phone and start playing.
+                        Start with something simple. You don't want to spend the first hour reading a 40-page rulebook. This is why we created <strong>Guesshh</strong>. It's built to be picked up instantly. No downloads, no physical cards-just open your phone and start playing.
                     </p>
 
                     <h2>3. Setting the Mood</h2>
@@ -78,5 +78,6 @@ export default function BlogPostPage() {
         </div>
     )
 }
+
 
 
