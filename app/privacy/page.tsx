@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react"
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Learn how Guesshh handles your data. GDPR-compliant privacy policy for EU users — minimal data, no user accounts.",
+    "Learn how Guesshh handles your data. GDPR-compliant privacy policy for EU users - minimal data, no user accounts.",
 }
 
 export default function PrivacyPage() {
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
             </span>
             , based in Cyprus. We are the data controller for personal data
             processed in connection with Guesshh. There are no user accounts and
-            no email collection — we keep data to the absolute minimum needed to
+            no email collection - we keep data to the absolute minimum needed to
             run the game.
           </p>
 
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
                   Game preferences:
                 </span>{" "}
                 Language, haptics, and similar settings. Stored in localStorage
-                on your device only — never sent to our servers.
+                on your device only - never sent to our servers.
               </li>
               <li>
                 <span className="font-medium text-foreground">
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
                 <span className="font-medium text-foreground">
                   Game session data:
                 </span>{" "}
-                Temporary data during multiplayer games — room codes, the
+                Temporary data during multiplayer games - room codes, the
                 nickname you choose, and game state. Stored in Supabase and
                 automatically deleted when the session ends or after 24 hours of
                 inactivity.
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                   Age verification result:
                 </span>{" "}
                 Whether you confirmed you are 18 or older. Stored in localStorage
-                on your device only — never sent to our servers.
+                on your device only - never sent to our servers.
               </li>
             </ul>
           </section>
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
               </li>
               <li>We do not collect precise location data.</li>
               <li>
-                We do not store payment card details — these are handled
+                We do not store payment card details - these are handled
                 entirely by Stripe.
               </li>
               <li>
@@ -206,7 +206,7 @@ export default function PrivacyPage() {
                 <span className="font-medium text-foreground">
                   Google AdSense
                 </span>{" "}
-                (planned — not yet active): When our ad-supported free tier
+                (planned - not yet active): When our ad-supported free tier
                 launches, free-tier users will see adverts served by Google. If
                 you consent to personalised ads via our cookie banner, Google
                 may set tracking cookies. Non-personalised ads are available
