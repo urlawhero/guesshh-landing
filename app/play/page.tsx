@@ -26,7 +26,7 @@ export default function PlayPage() {
         </h1>
 
         <p className="mt-4 text-pretty text-lg leading-relaxed text-zinc-400">
-          The game is almost ready. Stay tuned — it{"'"}s going to be worth the wait.
+          The game is almost ready. Stay tuned - it{"'"}s going to be worth the wait.
         </p>
 
         <a
