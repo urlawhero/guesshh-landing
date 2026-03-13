@@ -4,12 +4,12 @@ import { SeoPageLayout } from "@/components/seo-page-layout"
 export const metadata: Metadata = {
   title: "Best Party Games for Groups of 3–25 Players",
   description:
-    "Looking for the best party games for large groups? Discover free online and in-person options for 3 to 25 players, including Guesshh — the instant no-download party game.",
+    "Looking for the best party games for large groups? Discover free online and in-person options for 3 to 25 players, including Guesshh - the instant no-download party game.",
   alternates: { canonical: "/party-games-for-groups" },
   openGraph: {
     title: "Best Party Games for Groups of 3–25 Players | Guesshh",
     description:
-      "The best party games for 3 to 25 players — online and in-person. No downloads, no accounts. Just open a browser and play.",
+      "The best party games for 3 to 25 players - online and in-person. No downloads, no accounts. Just open a browser and play.",
     url: "https://guesshh.com/party-games-for-groups",
   },
 }
@@ -18,7 +18,7 @@ export default function PartyGamesForGroupsPage() {
   return (
     <SeoPageLayout
       title="Best Party Games for Groups of 3–25 Players"
-      description="Whether you're at a house party, a family gathering, or a team meetup, these games work for any group size — including one that runs entirely in your browser."
+      description="Whether you're at a house party, a family gathering, or a team meetup, these games work for any group size - including one that runs entirely in your browser."
     >
       <h2>Why Group Party Games Are Hard to Get Right</h2>
       <p>
@@ -31,7 +31,7 @@ export default function PartyGamesForGroupsPage() {
 
       <h3>Guesshh (Browser, Free)</h3>
       <p>
-        Works for any group size from 3 to 25. One player is the spy — they don&apos;t know the secret
+        Works for any group size from 3 to 25. One player is the spy - they don&apos;t know the secret
         word. Everyone else knows it. Ask questions, catch the spy, win the round. No cards, no app store,
         just open <a href="https://play.guesshh.com" target="_blank" rel="noopener noreferrer">play.guesshh.com</a> and share a QR code.
       </p>
@@ -57,10 +57,10 @@ export default function PartyGamesForGroupsPage() {
 
       <h2>The Best Party Games for 8–15 Players</h2>
 
-      <h3>Guesshh — Online Multiplayer</h3>
+      <h3>Guesshh - Online Multiplayer</h3>
       <p>
         For groups of 8 to 15, Guesshh online multiplayer is ideal. Everyone joins from their own phone.
-        The host creates a room, shares the code, and the game runs itself — timers, voting, and results
+        The host creates a room, shares the code, and the game runs itself - timers, voting, and results
         all handled automatically.
       </p>
 
@@ -78,9 +78,9 @@ export default function PartyGamesForGroupsPage() {
 
       <h2>The Best Party Games for 15–25 Players</h2>
 
-      <h3>Guesshh — Large Group Mode</h3>
+      <h3>Guesshh - Large Group Mode</h3>
       <p>
-        Guesshh supports up to 25 simultaneous online players — one of the few party games that
+        Guesshh supports up to 25 simultaneous online players - one of the few party games that
         genuinely scales to this size without breaking down. Multiple spies can be set for larger groups
         to keep the suspicion spread across the room.
       </p>
@@ -100,11 +100,11 @@ export default function PartyGamesForGroupsPage() {
       <h2>Online Party Games You Can Play Right Now (No Download)</h2>
       <p>The following games work entirely in a browser with no app or account required:</p>
       <ul>
-        <li><strong>Guesshh</strong> — Social deduction, 3–25 players, free</li>
-        <li><strong>Gartic Phone</strong> — Online Telestrations, free</li>
-        <li><strong>Skribbl.io</strong> — Online Pictionary, free</li>
-        <li><strong>Kahoot</strong> — Multiplayer quiz, free tier available</li>
-        <li><strong>Skrillo / GeoGuessr</strong> — Geography, free tier</li>
+        <li><strong>Guesshh</strong> - Social deduction, 3–25 players, free</li>
+        <li><strong>Gartic Phone</strong> - Online Telestrations, free</li>
+        <li><strong>Skribbl.io</strong> - Online Pictionary, free</li>
+        <li><strong>Kahoot</strong> - Multiplayer quiz, free tier available</li>
+        <li><strong>Skrillo / GeoGuessr</strong> - Geography, free tier</li>
       </ul>
 
       <h2>What to Look for in a Group Party Game</h2>
@@ -116,7 +116,7 @@ export default function PartyGamesForGroupsPage() {
         <li><strong>Accessible.</strong> A new player should be able to understand it in under 60 seconds.</li>
       </ul>
 
-      <h2>Start Playing Now — No Setup Required</h2>
+      <h2>Start Playing Now - No Setup Required</h2>
       <p>
         If you need a game that works for any group size, runs on any device, and starts in under 30
         seconds, Guesshh is your answer.
