@@ -45,7 +45,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-slate-400 mb-8 leading-relaxed">
-              The ultimate multiplayer social deduction party game. Bluff, question, and outsmart your friends — no downloads, no accounts, just instant fun for up to 25 players.
+              The ultimate multiplayer social deduction party game. Bluff, question, and outsmart your friends - no downloads, no accounts, just instant fun for up to 25 players.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -53,7 +53,7 @@ export function Hero() {
                 href="https://play.guesshh.com"
                 className="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-full bg-[#4ade80] px-8 text-base font-bold text-[#050816] shadow-[0_0_28px_rgba(74,222,128,0.35)] transition-transform hover:scale-105"
               >
-                Play Now — It's Free →
+                Play Now - It's Free →
               </Link>
               <Link
                 href="#how-it-works"
