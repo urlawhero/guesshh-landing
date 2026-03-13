@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Guesshh",
+  title: "Privacy Policy - Guesshh",
   description:
     "GDPR-compliant Privacy Policy for Guesshh. Learn what data we collect, why, and how to exercise your rights as an EU user.",
 }
@@ -144,7 +144,7 @@ export default function PrivacyPage() {
             <SubHeading>Game Preferences</SubHeading>
             <p>
               Language selection, haptics preferences, and similar app settings. Stored in{" "}
-              <code className="rounded bg-white/10 px-1">localStorage</code> on your device only —
+              <code className="rounded bg-white/10 px-1">localStorage</code> on your device only -
               never sent to our servers.
             </p>
 
@@ -153,7 +153,7 @@ export default function PrivacyPage() {
               If you purchase a premium plan, we store the following in Supabase: your device ID,
               plan type, purchase date, expiry date, and your Stripe customer ID. This is required to
               verify your access and fulfil our legal accounting obligations. We never see or store
-              your payment card details — these are handled entirely by Stripe.
+              your payment card details - these are handled entirely by Stripe.
             </p>
 
             <SubHeading>Multiplayer Session Data</SubHeading>
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
             <p>
               Whether you confirmed you are 18 or older when accessing the &ldquo;Mature / Night
               Mode&rdquo; category. Stored in <code className="rounded bg-white/10 px-1">localStorage</code>{" "}
-              on your device only — never sent to our servers.
+              on your device only - never sent to our servers.
             </p>
 
             <SubHeading>Analytics Data (Google Analytics 4)</SubHeading>
@@ -184,7 +184,7 @@ export default function PrivacyPage() {
               <li>We do not collect precise GPS location data.</li>
               <li>We do not store payment card details.</li>
               <li>We do not sell your data to any third party, ever.</li>
-              <li>There are no user accounts — you do not register or log in.</li>
+              <li>There are no user accounts - you do not register or log in.</li>
             </ul>
           </section>
 
@@ -249,7 +249,7 @@ export default function PrivacyPage() {
                 <code className="rounded bg-white/10 px-1">device_id</code>,{" "}
                 <code className="rounded bg-white/10 px-1">game_preferences</code>,{" "}
                 <code className="rounded bg-white/10 px-1">premium_status</code>,{" "}
-                <code className="rounded bg-white/10 px-1">cookie_consent</code> — stored in
+                <code className="rounded bg-white/10 px-1">cookie_consent</code> - stored in
                 localStorage. Required for core game functionality. Cannot be disabled.
               </p>
             </div>
@@ -272,14 +272,14 @@ export default function PrivacyPage() {
                 <Pill color="zinc">Stripe</Pill>
               </p>
               <p>
-                <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) — set by
+                <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) - set by
                 Stripe during checkout for fraud prevention. Only active on the payment flow.
               </p>
             </div>
 
             <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-4">
               <p className="mb-2 font-semibold text-amber-400">
-                Advertising — Google AdSense
+                Advertising - Google AdSense
                 <Pill color="amber">Not yet active</Pill>
               </p>
               <p>
@@ -323,7 +323,7 @@ export default function PrivacyPage() {
             <SectionHeading id="third-parties">6. Third-Party Services</SectionHeading>
             <ul className="space-y-4">
               <li>
-                <span className="font-medium text-white">Supabase</span> —{" "}
+                <span className="font-medium text-white">Supabase</span> -{" "}
                 <a
                   href="https://supabase.com/privacy"
                   target="_blank"
@@ -337,7 +337,7 @@ export default function PrivacyPage() {
                 the EU where possible; US transfers are covered by Standard Contractual Clauses (SCCs).
               </li>
               <li>
-                <span className="font-medium text-white">Stripe</span> —{" "}
+                <span className="font-medium text-white">Stripe</span> -{" "}
                 <a
                   href="https://stripe.com/privacy"
                   target="_blank"
@@ -351,7 +351,7 @@ export default function PrivacyPage() {
                 with Stripe to manage your subscription; we never see or store card details.
               </li>
               <li>
-                <span className="font-medium text-white">Google Analytics 4 & Tag Manager</span> —{" "}
+                <span className="font-medium text-white">Google Analytics 4 & Tag Manager</span> -{" "}
                 <a
                   href="https://policies.google.com/privacy"
                   target="_blank"
@@ -365,13 +365,13 @@ export default function PrivacyPage() {
                 the US under SCCs and the EU-US DPF.
               </li>
               <li>
-                <span className="font-medium text-white">Google Search Console</span> — measures
+                <span className="font-medium text-white">Google Search Console</span> - measures
                 organic search performance for guesshh.com (impressions, clicks, rankings). No user
                 PII is transmitted; this is aggregate data only.
               </li>
               <li>
                 <span className="font-medium text-white">Google AdSense</span>{" "}
-                <span className="text-amber-400">(not yet active)</span> —{" "}
+                <span className="text-amber-400">(not yet active)</span> -{" "}
                 <a
                   href="https://policies.google.com/privacy"
                   target="_blank"
