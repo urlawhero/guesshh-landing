@@ -18,7 +18,7 @@ export function PlayYourWay() {
             Add to Your Home Screen
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Install Guesshh as a Progressive Web App for a native experience — no App Store visit needed.
+            Install Guesshh as a Progressive Web App for a native experience - no App Store visit needed.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export function PlayYourWay() {
             </h3>
             <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
               No installation needed. Just open the link on any device and start playing. Guesshh works
-              on Chrome, Safari, Firefox, Edge — any modern browser.
+              on Chrome, Safari, Firefox, Edge - any modern browser.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
