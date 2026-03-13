@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react"
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
-    "Cookie Policy for Guesshh — learn what cookies and local storage we use, why, and how to manage your preferences.",
+    "Cookie Policy for Guesshh - learn what cookies and local storage we use, why, and how to manage your preferences.",
 }
 
 export default function CookiesPage() {
@@ -57,7 +57,7 @@ export default function CookiesPage() {
               <ul className="list-disc space-y-3 pl-5">
                 <li>
                   <span className="font-medium text-foreground">device_id</span>{" "}
-                  — a random UUID stored in localStorage that identifies your
+                  - a random UUID stored in localStorage that identifies your
                   device so your game progress and subscription are remembered.
                   When you play in multiplayer mode, this ID is sent to our
                   servers to connect you with other players. It is also sent to
@@ -68,7 +68,7 @@ export default function CookiesPage() {
                   <span className="font-medium text-foreground">
                     game_preferences
                   </span>{" "}
-                  — your chosen language, haptics setting, and similar options.
+                  - your chosen language, haptics setting, and similar options.
                   Stored in localStorage on your device only, never sent to our
                   servers.
                 </li>
@@ -76,7 +76,7 @@ export default function CookiesPage() {
                   <span className="font-medium text-foreground">
                     premium_status
                   </span>{" "}
-                  — a local cache of your plan status to avoid unnecessary
+                  - a local cache of your plan status to avoid unnecessary
                   server calls. The authoritative check always happens
                   server-side.
                 </li>
@@ -88,7 +88,7 @@ export default function CookiesPage() {
                   <span className="font-medium text-foreground">
                     cookie_consent_ts
                   </span>{" "}
-                  — remember whether you accepted or declined cookies so we
+                  - remember whether you accepted or declined cookies so we
                   don&rsquo;t ask you again.
                 </li>
               </ul>
@@ -123,7 +123,7 @@ export default function CookiesPage() {
               <h3 className="mb-1 text-base font-semibold text-foreground">
                 Advertising{" "}
                 <span className="ml-2 inline-block rounded-full bg-amber-500/15 px-2.5 py-0.5 text-xs font-medium text-amber-400">
-                  Optional — not yet active
+                  Optional - not yet active
                 </span>
               </h3>
               <p className="mb-3">
@@ -143,7 +143,7 @@ export default function CookiesPage() {
                   <span className="font-medium text-foreground">
                     Non-personalised ads (no consent required):
                   </span>{" "}
-                  If you decline, we show context-based adverts only — no
+                  If you decline, we show context-based adverts only - no
                   tracking cookies are set.
                 </li>
               </ul>
@@ -179,7 +179,7 @@ export default function CookiesPage() {
                 <span className="font-medium text-foreground">
                   Device ID &amp; preferences (localStorage):
                 </span>{" "}
-                stored until you clear localStorage — no automatic expiry.
+                stored until you clear localStorage - no automatic expiry.
               </li>
               <li>
                 <span className="font-medium text-foreground">
