@@ -97,7 +97,7 @@ export function Navbar() {
                 href="https://play.guesshh.com"
                 className="flex w-full items-center justify-center rounded-full bg-primary px-5 py-4 text-center text-base font-bold text-[#050816] transition-transform active:scale-95"
               >
-                Play Now — It's Free
+                Play Now - It's Free
               </a>
             </li>
           </ul>
