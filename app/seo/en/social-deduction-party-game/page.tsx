@@ -44,7 +44,7 @@ export default function SocialDeductionPartyGamePage() {
 
       <p>
         Whether you are in the same room or spread across the globe on a call, Guesshh brings the psychological thrill
-        of social deduction directly to your browser—no downloads, no accounts, just pure tension and laughter.
+        of social deduction directly to your browser-no downloads, no accounts, just pure tension and laughter.
       </p>
     </SeoPageLayout>
   )
