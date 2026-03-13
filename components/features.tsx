@@ -11,7 +11,7 @@ const features = [
   {
     icon: QrCode,
     title: "QR Code Sharing",
-    description: "Instantly share your room with a scannable QR code — perfect for in-person gatherings.",
+    description: "Instantly share your room with a scannable QR code - perfect for in-person gatherings.",
   },
   {
     icon: Users,
@@ -26,7 +26,7 @@ const features = [
   {
     icon: Smartphone,
     title: "Works on Any Device",
-    description: "Play on phones, tablets, or desktops. No app store visit needed — just open the link.",
+    description: "Play on phones, tablets, or desktops. No app store visit needed - just open the link.",
   },
   {
     icon: ShieldCheck,
@@ -36,7 +36,7 @@ const features = [
   {
     icon: Layers,
     title: "Install as PWA",
-    description: "Add Guesshh to your home screen for a native app experience — works offline-ready.",
+    description: "Add Guesshh to your home screen for a native app experience - works offline-ready.",
   },
 ]
 
