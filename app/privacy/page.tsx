@@ -314,6 +314,16 @@ export default function PrivacyPage() {
                   be updated before AdSense is activated.
                 </p>
               </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                You have the right to withdraw consent at any time. You can{" "}
+                <button
+                  onClick={openPreferences}
+                  className="text-[#22c55e] underline underline-offset-2 hover:text-[#4ade80] transition-colors"
+                >
+                  update your cookie preferences
+                </button>{" "}
+                at any point, and your choice will be saved immediately.
+              </p>
             </div>
           </section>
 
