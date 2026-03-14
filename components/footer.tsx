@@ -1,10 +1,13 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useCookieConsent } from "@/hooks/useCookieConsent"
 
 const siteLinks = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Features", href: "#features" },
-  { label: "FAQ", href: "#faq" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Features", href: "/#features" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Play", href: "https://play.guesshh.com" },
 ]
 
@@ -15,11 +18,15 @@ const legalLinks = [
 ]
 
 export function Footer() {
+  const { openPreferences } = useCookieConsent()
+
   return (
     <footer className="border-t-2 border-green-400/30 bg-background px-6 py-16">
       <div className="mx-auto max-w-6xl">
+
         {/* Desktop layout: 3 columns */}
         <div className="hidden md:grid md:grid-cols-3 md:gap-12">
+
           {/* Left column: Navigation */}
           <div className="flex flex-col gap-5">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
@@ -42,7 +49,7 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Center column: Logo + tagline + copyright */}
+          {/* Center column: Logo + tagline */}
           <div className="flex flex-col items-center gap-4">
             <Link href="/" aria-label="Guesshh home">
               <Image
@@ -73,9 +80,17 @@ export function Footer() {
                   {link.label}
                 </Link>
               ))}
+              {/* Cookie Settings — opens the preferences modal */}
+              <button
+                onClick={openPreferences}
+                className="w-fit text-sm text-zinc-400 transition-colors hover:text-primary"
+              >
+                Cookie Settings
+              </button>
             </nav>
+
             <div className="mt-2 flex items-center gap-3">
-              <span className="text-xs text-zinc-500">{"Follow us for updates \u2192"}</span>
+              <span className="text-xs text-zinc-500">Follow us for updates →</span>
               <a
                 href="https://x.com/gaborone_dev"
                 target="_blank"
@@ -132,7 +147,7 @@ export function Footer() {
 
           <div className="h-px w-16 bg-border/40" aria-hidden="true" />
 
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
             {legalLinks.map((link) => (
               <Link
                 key={link.href}
@@ -142,10 +157,17 @@ export function Footer() {
                 {link.label}
               </Link>
             ))}
+            {/* Cookie Settings — opens the preferences modal */}
+            <button
+              onClick={openPreferences}
+              className="text-sm text-zinc-400 transition-colors hover:text-primary"
+            >
+              Cookie Settings
+            </button>
           </nav>
         </div>
 
-        {/* Bottom bar: copyright + developer */}
+        {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center gap-2 border-t border-slate-800 pt-8">
           <p className="text-sm text-zinc-500">
             &copy; {new Date().getFullYear()} Guesshh. All rights reserved.
