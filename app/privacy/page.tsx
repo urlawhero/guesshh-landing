@@ -1,12 +1,8 @@
-import type { Metadata } from "next"
+"use client"
+
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Privacy Policy - Guesshh",
-  description:
-    "GDPR-compliant Privacy Policy for Guesshh. Learn what data we collect, why, and how to exercise your rights as an EU user.",
-}
+import { useCookieConsent } from "@/hooks/useCookieConsent"
 
 const SectionHeading = ({ id, children }: { id: string; children: React.ReactNode }) => (
   <h2 id={id} className="mb-3 scroll-mt-24 text-lg font-bold text-[#22c55e]">
@@ -38,6 +34,8 @@ const Pill = ({
 }
 
 export default function PrivacyPage() {
+  const { openPreferences } = useCookieConsent()
+
   return (
     <div className="min-h-screen bg-[#0f172a] px-6 py-20 text-gray-300">
       <div className="mx-auto max-w-3xl">
@@ -110,8 +108,8 @@ export default function PrivacyPage() {
             <p className="mb-3">The data controller for Guesshh is:</p>
             <div className="rounded-lg border border-white/10 bg-white/5 p-4">
               <p className="font-medium text-white">
-                [ANTONIS YOUR-SURNAME]{" "}
-                <span className="text-xs text-gray-500 font-normal">
+                [YOUR FULL NAME]{" "}
+                <span className="text-xs font-normal text-gray-500">
                   (or [YOUR COMPANY NAME] once a legal entity is registered)
                 </span>
               </p>
@@ -150,17 +148,16 @@ export default function PrivacyPage() {
               play.guesshh.com. The email address you enter at Stripe checkout is stored in our
               Supabase database alongside your entitlement record. This email is used{" "}
               <strong className="text-white">solely</strong> to restore your purchase access if
-              you change devices, clear your browser data, or lose your device ID - via the
-              &ldquo;Restore Purchases&rdquo; feature. You enter your Stripe checkout email in
-              the restore modal, and we match it to your active entitlement to re-link it to your
-              new device. We do not use this email for marketing or any other purpose.
+              you change devices, clear your browser data, or lose your device ID via the
+              &ldquo;Restore Purchases&rdquo; feature. We do not use this email for marketing
+              or any other purpose.
             </p>
 
             <SubHeading>Game Preferences</SubHeading>
             <p>
               Language, haptics, and similar settings. Stored in{" "}
               <code className="rounded bg-white/10 px-1">localStorage</code> on your device only
-              - never sent to our servers.
+              — never sent to our servers.
             </p>
 
             <SubHeading>Purchase & Entitlement Records</SubHeading>
@@ -168,7 +165,7 @@ export default function PrivacyPage() {
               If you purchase a premium plan we store in Supabase: your device ID, your Stripe
               checkout email, plan type, purchase date, expiry date, and your Stripe customer ID.
               This is required to verify your access, enable purchase restoration, and fulfil our
-              EU accounting obligations. All payments are processed exclusively by Stripe - we
+              EU accounting obligations. All payments are processed exclusively by Stripe — we
               never see or store payment card details.
             </p>
 
@@ -184,7 +181,7 @@ export default function PrivacyPage() {
               Whether you confirmed you are 18 or older for the &ldquo;Mature / Night Mode&rdquo;
               category. Stored in{" "}
               <code className="rounded bg-white/10 px-1">localStorage</code> on your device only
-              - never sent to our servers.
+              — never sent to our servers.
             </p>
 
             <SubHeading>Analytics Data (Google Analytics 4)</SubHeading>
@@ -197,12 +194,11 @@ export default function PrivacyPage() {
 
             <SubHeading>Note on Google Play</SubHeading>
             <p>
-              Guesshh uses Google Play for app distribution only. All payments - including
-              purchases initiated from within the Google Play app - are processed through Stripe
-              at play.guesshh.com via Google&rsquo;s External Offers Program. Google Play does
-              not process, see, or store any payment data for Guesshh transactions. Google Play
-              has access only to standard app distribution and analytics data associated with
-              your Google account, which is governed by{" "}
+              Guesshh uses Google Play for app distribution only. All payments are processed
+              through Stripe at play.guesshh.com via Google&rsquo;s External Offers Program.
+              Google Play does not process, see, or store any payment data for Guesshh
+              transactions. Google Play has access only to standard app distribution and analytics
+              data associated with your Google account, which is governed by{" "}
               <a
                 href="https://policies.google.com/privacy"
                 target="_blank"
@@ -220,7 +216,7 @@ export default function PrivacyPage() {
               <li>We do not collect precise GPS location.</li>
               <li>We do not store payment card details.</li>
               <li>We do not sell your data to any third party, ever.</li>
-              <li>There are no user accounts - you do not register or log in.</li>
+              <li>There are no user accounts — you do not register or log in.</li>
             </ul>
           </section>
 
@@ -279,7 +275,7 @@ export default function PrivacyPage() {
                   <code className="rounded bg-white/10 px-1">device_id</code>,{" "}
                   <code className="rounded bg-white/10 px-1">game_preferences</code>,{" "}
                   <code className="rounded bg-white/10 px-1">premium_status</code>,{" "}
-                  <code className="rounded bg-white/10 px-1">cookie_consent</code> - stored in
+                  <code className="rounded bg-white/10 px-1">cookie_consent</code> — stored in
                   localStorage. Cannot be disabled.
                 </p>
               </div>
@@ -290,7 +286,7 @@ export default function PrivacyPage() {
                 </p>
                 <p>
                   <code className="rounded bg-white/10 px-1">_ga</code> (2 years),{" "}
-                  <code className="rounded bg-white/10 px-1">_ga_XXXXX</code> (2 years) - GA4
+                  <code className="rounded bg-white/10 px-1">_ga_XXXXX</code> (2 years) — GA4
                   via GTM. Only set with your consent.
                 </p>
               </div>
@@ -300,13 +296,13 @@ export default function PrivacyPage() {
                   <Pill color="zinc">Stripe</Pill>
                 </p>
                 <p>
-                  <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) - set
+                  <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) — set
                   by Stripe during checkout for fraud prevention only.
                 </p>
               </div>
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-4">
                 <p className="mb-1 font-semibold text-amber-400">
-                  Advertising - Google AdSense
+                  Advertising — Google AdSense
                   <Pill color="amber">Not yet active</Pill>
                 </p>
                 <p>
@@ -314,16 +310,20 @@ export default function PrivacyPage() {
                   be updated before AdSense is activated.
                 </p>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                You have the right to withdraw consent at any time. You can{" "}
-                <button
-                  onClick={openPreferences}
-                  className="text-[#22c55e] underline underline-offset-2 hover:text-[#4ade80] transition-colors"
-                >
-                  update your cookie preferences
-                </button>{" "}
-                at any point, and your choice will be saved immediately.
-              </p>
+
+              {/* Cookie preferences link — uses hook, safe because "use client" */}
+              <div className="rounded-lg border border-[#22c55e]/20 bg-[#22c55e]/5 p-4">
+                <p className="text-sm text-slate-300">
+                  You have the right to withdraw consent at any time.{" "}
+                  <button
+                    onClick={openPreferences}
+                    className="text-[#22c55e] underline underline-offset-2 transition-colors hover:text-[#4ade80]"
+                  >
+                    Update your cookie preferences
+                  </button>{" "}
+                  at any point — your choice will be saved immediately.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -334,8 +334,8 @@ export default function PrivacyPage() {
               <p className="font-semibold text-amber-400">⚠ Google AdSense: Not Currently Active</p>
               <p className="mt-2">
                 The free tier will be supported by Google AdSense. As of this policy&rsquo;s date,
-                AdSense is <strong className="text-white">not enabled</strong> - no advertising
-                cookies are set. This policy will be updated and a new consent banner displayed
+                AdSense is <strong className="text-white">not enabled</strong> — no advertising
+                cookies are set. This policy will be updated and a new consent prompt displayed
                 before AdSense is activated. Premium subscribers will never see ads.
               </p>
             </div>
@@ -353,9 +353,8 @@ export default function PrivacyPage() {
               >
                 Google&rsquo;s Privacy Policy
               </a>{" "}
-              for advertising data details. This section will be updated when US advertising
-              becomes active. Meta Pixel, TikTok Pixel, and Google Ads Remarketing are not
-              installed and not active.
+              for advertising data details. Meta Pixel, TikTok Pixel, and Google Ads Remarketing
+              are not installed and not active.
             </p>
           </section>
 
@@ -363,52 +362,78 @@ export default function PrivacyPage() {
           <section>
             <SectionHeading id="third-parties">6. Third-Party Services</SectionHeading>
             <ul className="space-y-4">
+              {[
+                {
+                  name: "Supabase",
+                  href: "https://supabase.com/privacy",
+                  desc: "Our cloud database and real-time infrastructure, acting as data processor under a signed DPA. EU processing where possible; US transfers via SCCs.",
+                },
+                {
+                  name: "Stripe",
+                  href: "https://stripe.com/privacy",
+                  desc: "Our exclusive payment processor for all Guesshh purchases — whether initiated via the browser, installed PWA, or the Google Play app. Stripe is an independent data controller under the EU-US DPF. We never see or store card details.",
+                },
+                {
+                  name: "Google Analytics 4 & Tag Manager",
+                  href: "https://policies.google.com/privacy",
+                  desc: "Used with your consent to measure app usage. IP anonymisation is enabled. Data may transfer to the US via SCCs and EU-US DPF.",
+                },
+                {
+                  name: "Google Play",
+                  href: "https://policies.google.com/privacy",
+                  desc: "Used for app distribution and discovery only. Google Play does not process payments for Guesshh. When a user taps a purchase link in the Android app, they are directed to Stripe at play.guesshh.com via Google's External Offers Program.",
+                },
+                {
+                  name: "Google Search Console",
+                  href: null,
+                  desc: "Aggregate search performance data for guesshh.com only. No user PII transmitted.",
+                },
+              ].map((item) => (
+                <li key={item.name}>
+                  {item.href ? (
+                    <>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-white hover:text-[#22c55e] transition-colors"
+                      >
+                        {item.name}
+                      </a>{" "}
+                      — {item.desc}
+                    </>
+                  ) : (
+                    <>
+                      <span className="font-medium text-white">{item.name}</span> — {item.desc}
+                    </>
+                  )}
+                </li>
+              ))}
               <li>
-                <span className="font-medium text-white">Supabase</span> -{" "}
-                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">Privacy Policy</a>.
-                Our cloud database and real-time infrastructure, acting as data processor under a
-                signed DPA. EU processing where possible; US transfers via SCCs.
-              </li>
-              <li>
-                <span className="font-medium text-white">Stripe</span> -{" "}
-                <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">Privacy Policy</a>.
-                Our exclusive payment processor for all Guesshh purchases - whether initiated via
-                the browser, installed PWA, or the Google Play app. Stripe is an independent data
-                controller under the EU-US DPF. We never see or store card details.
-              </li>
-              <li>
-                <span className="font-medium text-white">Google Analytics 4 & Tag Manager</span> -{" "}
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">Google Privacy Policy</a>.
-                Used with your consent to measure app usage. IP anonymisation is enabled. Data may
-                transfer to the US via SCCs and EU-US DPF.
-              </li>
-              <li>
-                <span className="font-medium text-white">Google Play</span> -{" "}
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">Google Privacy Policy</a>.
-                Used for app distribution and discovery only. Google Play does not process
-                payments for Guesshh. When a user taps a purchase link in the Android app, they
-                are directed to Stripe at play.guesshh.com via Google&rsquo;s External Offers
-                Program (EEA) or External Content Links program (US). Google has access only to
-                standard Play distribution data (installs, crashes, ratings) as described in their
-                own privacy policy.
-              </li>
-              <li>
-                <span className="font-medium text-white">Google AdSense</span>{" "}
-                <span className="text-amber-400">(not yet active)</span> -{" "}
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">Google Privacy Policy</a>.
-                Will be enabled in a future update with a new consent banner before any
+                <span className="font-medium text-white">
+                  Google AdSense{" "}
+                  <span className="text-amber-400 font-normal text-xs">(not yet active)</span>
+                </span>{" "}
+                —{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#22c55e] hover:underline"
+                >
+                  Google Privacy Policy
+                </a>
+                . Will be enabled in a future update with a new consent banner before any
                 advertising cookies are set.
-              </li>
-              <li>
-                <span className="font-medium text-white">Google Search Console</span> - aggregate
-                search performance data for guesshh.com only. No user PII transmitted.
               </li>
             </ul>
           </section>
 
           {/* 7 */}
           <section>
-            <SectionHeading id="international-transfers">7. International Data Transfers</SectionHeading>
+            <SectionHeading id="international-transfers">
+              7. International Data Transfers
+            </SectionHeading>
             <p className="mb-3">
               Guesshh is operated from Cyprus (EU). Some data is transferred to the US:
             </p>
@@ -422,7 +447,9 @@ export default function PrivacyPage() {
                 Framework (DPF), certified with the US Department of Commerce.
               </li>
               <li>
-                <span className="font-medium text-white">Google (GA4, GTM, Play, AdSense):</span>{" "}
+                <span className="font-medium text-white">
+                  Google (GA4, GTM, Play, AdSense):
+                </span>{" "}
                 SCCs and EU-US DPF.
               </li>
             </ul>
@@ -483,7 +510,7 @@ export default function PrivacyPage() {
               </li>
               <li>
                 The &ldquo;Mature / Night Mode&rdquo; category requires in-app confirmation of
-                18+ status. This is stored on device only - never sent to our servers.
+                18+ status. This is stored on device only — never sent to our servers.
               </li>
               <li>
                 If you believe a child under 13 has used Guesshh, contact{" "}
@@ -532,7 +559,7 @@ export default function PrivacyPage() {
           <section>
             <SectionHeading id="contact">11. How to Contact Us</SectionHeading>
             <div className="rounded-lg border border-white/10 bg-white/5 p-4">
-              <p className="font-medium text-white">[ANTONIS YOUR-SURNAME]</p>
+              <p className="font-medium text-white">[YOUR FULL NAME]</p>
               <p>Cyprus, European Union</p>
               <p className="mt-2">
                 Email:{" "}
@@ -557,25 +584,43 @@ export default function PrivacyPage() {
               <p>1 Iasonos Street, 1082 Nicosia, Cyprus</p>
               <p>
                 Website:{" "}
-                <a href="https://www.dataprotection.gov.cy" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">
+                <a
+                  href="https://www.dataprotection.gov.cy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#22c55e] hover:underline"
+                >
                   dataprotection.gov.cy
                 </a>
               </p>
               <p>
                 Email:{" "}
-                <a href="mailto:commissioner@dataprotection.gov.cy" className="text-[#22c55e] hover:underline">
+                <a
+                  href="mailto:commissioner@dataprotection.gov.cy"
+                  className="text-[#22c55e] hover:underline"
+                >
                   commissioner@dataprotection.gov.cy
                 </a>
               </p>
             </div>
             <p className="mt-3">
-              If you are in another EU member state, you may contact your local authority - full
+              If you are in another EU member state, you may contact your local authority — full
               list at{" "}
-              <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">
+              <a
+                href="https://edpb.europa.eu/about-edpb/about-edpb/members_en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#22c55e] hover:underline"
+              >
                 edpb.europa.eu
               </a>
               . EU users may also use the EU Online Dispute Resolution platform at{" "}
-              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-[#22c55e] hover:underline">
+              <a
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#22c55e] hover:underline"
+              >
                 ec.europa.eu/consumers/odr
               </a>
               .
@@ -588,8 +633,8 @@ export default function PrivacyPage() {
             <p>
               We may update this Privacy Policy to reflect changes in our services, legal
               requirements, or data practices. We will update the &ldquo;Last updated&rdquo; date
-              above. For significant changes - enabling Google AdSense, launching US-targeted
-              advertising, or forming a registered legal entity - we will notify users through an
+              above. For significant changes — enabling Google AdSense, launching US-targeted
+              advertising, or forming a registered legal entity — we will notify users through an
               updated cookie consent banner or in-app notice. Continued use of Guesshh after
               changes constitutes acceptance of the updated policy.
             </p>
