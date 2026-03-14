@@ -112,8 +112,24 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
   )
 }
 
-export function useCookieConsent() {
+export function useCookieConsent(): CookieConsentContextType {
   const ctx = useContext(CookieConsentContext)
-  if (!ctx) throw new Error("useCookieConsent must be used inside CookieConsentProvider")
+
+  // During SSR / static prerender, context is null.
+  // Return safe no-op fallbacks so the build never throws.
+  if (!ctx) {
+    return {
+      consentGiven: false,
+      analytics: false,
+      bannerVisible: false,
+      preferencesOpen: false,
+      acceptAll: () => {},
+      savePreferences: () => {},
+      openPreferences: () => {},
+      closePreferences: () => {},
+    }
+  }
+
   return ctx
 }
+
