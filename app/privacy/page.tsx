@@ -157,7 +157,7 @@ export default function PrivacyPage() {
             <p>
               Language, haptics, and similar settings. Stored in{" "}
               <code className="rounded bg-white/10 px-1">localStorage</code> on your device only
-              — never sent to our servers.
+              - never sent to our servers.
             </p>
 
             <SubHeading>Purchase & Entitlement Records</SubHeading>
@@ -165,7 +165,7 @@ export default function PrivacyPage() {
               If you purchase a premium plan we store in Supabase: your device ID, your Stripe
               checkout email, plan type, purchase date, expiry date, and your Stripe customer ID.
               This is required to verify your access, enable purchase restoration, and fulfil our
-              EU accounting obligations. All payments are processed exclusively by Stripe — we
+              EU accounting obligations. All payments are processed exclusively by Stripe - we
               never see or store payment card details.
             </p>
 
@@ -181,7 +181,7 @@ export default function PrivacyPage() {
               Whether you confirmed you are 18 or older for the &ldquo;Mature / Night Mode&rdquo;
               category. Stored in{" "}
               <code className="rounded bg-white/10 px-1">localStorage</code> on your device only
-              — never sent to our servers.
+              - never sent to our servers.
             </p>
 
             <SubHeading>Analytics Data (Google Analytics 4)</SubHeading>
@@ -216,7 +216,7 @@ export default function PrivacyPage() {
               <li>We do not collect precise GPS location.</li>
               <li>We do not store payment card details.</li>
               <li>We do not sell your data to any third party, ever.</li>
-              <li>There are no user accounts — you do not register or log in.</li>
+              <li>There are no user accounts - you do not register or log in.</li>
             </ul>
           </section>
 
@@ -275,7 +275,7 @@ export default function PrivacyPage() {
                   <code className="rounded bg-white/10 px-1">device_id</code>,{" "}
                   <code className="rounded bg-white/10 px-1">game_preferences</code>,{" "}
                   <code className="rounded bg-white/10 px-1">premium_status</code>,{" "}
-                  <code className="rounded bg-white/10 px-1">cookie_consent</code> — stored in
+                  <code className="rounded bg-white/10 px-1">cookie_consent</code> - stored in
                   localStorage. Cannot be disabled.
                 </p>
               </div>
@@ -286,7 +286,7 @@ export default function PrivacyPage() {
                 </p>
                 <p>
                   <code className="rounded bg-white/10 px-1">_ga</code> (2 years),{" "}
-                  <code className="rounded bg-white/10 px-1">_ga_XXXXX</code> (2 years) — GA4
+                  <code className="rounded bg-white/10 px-1">_ga_XXXXX</code> (2 years) - GA4
                   via GTM. Only set with your consent.
                 </p>
               </div>
@@ -296,13 +296,13 @@ export default function PrivacyPage() {
                   <Pill color="zinc">Stripe</Pill>
                 </p>
                 <p>
-                  <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) — set
+                  <code className="rounded bg-white/10 px-1">__stripe_mid</code> (1 year) - set
                   by Stripe during checkout for fraud prevention only.
                 </p>
               </div>
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-4">
                 <p className="mb-1 font-semibold text-amber-400">
-                  Advertising — Google AdSense
+                  Advertising - Google AdSense
                   <Pill color="amber">Not yet active</Pill>
                 </p>
                 <p>
@@ -311,7 +311,7 @@ export default function PrivacyPage() {
                 </p>
               </div>
 
-              {/* Cookie preferences link — uses hook, safe because "use client" */}
+              {/* Cookie preferences link - uses hook, safe because "use client" */}
               <div className="rounded-lg border border-[#22c55e]/20 bg-[#22c55e]/5 p-4">
                 <p className="text-sm text-slate-300">
                   You have the right to withdraw consent at any time.{" "}
@@ -321,7 +321,7 @@ export default function PrivacyPage() {
                   >
                     Update your cookie preferences
                   </button>{" "}
-                  at any point — your choice will be saved immediately.
+                  at any point - your choice will be saved immediately.
                 </p>
               </div>
             </div>
@@ -334,7 +334,7 @@ export default function PrivacyPage() {
               <p className="font-semibold text-amber-400">⚠ Google AdSense: Not Currently Active</p>
               <p className="mt-2">
                 The free tier will be supported by Google AdSense. As of this policy&rsquo;s date,
-                AdSense is <strong className="text-white">not enabled</strong> — no advertising
+                AdSense is <strong className="text-white">not enabled</strong> - no advertising
                 cookies are set. This policy will be updated and a new consent prompt displayed
                 before AdSense is activated. Premium subscribers will never see ads.
               </p>
@@ -371,7 +371,7 @@ export default function PrivacyPage() {
                 {
                   name: "Stripe",
                   href: "https://stripe.com/privacy",
-                  desc: "Our exclusive payment processor for all Guesshh purchases — whether initiated via the browser, installed PWA, or the Google Play app. Stripe is an independent data controller under the EU-US DPF. We never see or store card details.",
+                  desc: "Our exclusive payment processor for all Guesshh purchases - whether initiated via the browser, installed PWA, or the Google Play app. Stripe is an independent data controller under the EU-US DPF. We never see or store card details.",
                 },
                 {
                   name: "Google Analytics 4 & Tag Manager",
@@ -400,11 +400,11 @@ export default function PrivacyPage() {
                       >
                         {item.name}
                       </a>{" "}
-                      — {item.desc}
+                      - {item.desc}
                     </>
                   ) : (
                     <>
-                      <span className="font-medium text-white">{item.name}</span> — {item.desc}
+                      <span className="font-medium text-white">{item.name}</span> - {item.desc}
                     </>
                   )}
                 </li>
@@ -414,7 +414,7 @@ export default function PrivacyPage() {
                   Google AdSense{" "}
                   <span className="text-amber-400 font-normal text-xs">(not yet active)</span>
                 </span>{" "}
-                —{" "}
+                -{" "}
                 <a
                   href="https://policies.google.com/privacy"
                   target="_blank"
@@ -510,7 +510,7 @@ export default function PrivacyPage() {
               </li>
               <li>
                 The &ldquo;Mature / Night Mode&rdquo; category requires in-app confirmation of
-                18+ status. This is stored on device only — never sent to our servers.
+                18+ status. This is stored on device only - never sent to our servers.
               </li>
               <li>
                 If you believe a child under 13 has used Guesshh, contact{" "}
@@ -604,7 +604,7 @@ export default function PrivacyPage() {
               </p>
             </div>
             <p className="mt-3">
-              If you are in another EU member state, you may contact your local authority — full
+              If you are in another EU member state, you may contact your local authority - full
               list at{" "}
               <a
                 href="https://edpb.europa.eu/about-edpb/about-edpb/members_en"
@@ -633,8 +633,8 @@ export default function PrivacyPage() {
             <p>
               We may update this Privacy Policy to reflect changes in our services, legal
               requirements, or data practices. We will update the &ldquo;Last updated&rdquo; date
-              above. For significant changes — enabling Google AdSense, launching US-targeted
-              advertising, or forming a registered legal entity — we will notify users through an
+              above. For significant changes - enabling Google AdSense, launching US-targeted
+              advertising, or forming a registered legal entity - we will notify users through an
               updated cookie consent banner or in-app notice. Continued use of Guesshh after
               changes constitutes acceptance of the updated policy.
             </p>
