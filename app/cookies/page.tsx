@@ -55,7 +55,7 @@ export default function CookiesPage() {
           why we use it, and how you can control it.
         </p>
 
-        {/* Change Preferences CTA — near top, always visible */}
+        {/* Change Preferences CTA - near top, always visible */}
         <div className="mb-10 flex flex-col items-start justify-between gap-4 rounded-xl border border-[#22c55e]/30 bg-[#22c55e]/5 p-4 sm:flex-row sm:items-center">
           <p className="text-sm text-slate-300">
             You can update your cookie preferences at any time.
@@ -245,14 +245,14 @@ export default function CookiesPage() {
                     <td className="px-3 py-3">Cookie (third-party)</td>
                     <td className="px-3 py-3">
                       Set by Stripe during checkout to detect and prevent fraudulent transactions.
-                      Only active on the Stripe-hosted checkout flow. Managed entirely by Stripe —
+                      Only active on the Stripe-hosted checkout flow. Managed entirely by Stripe -
                       not accessible to Guesshh scripts.
                     </td>
                     <td className="px-3 py-3">1 year</td>
                     <td className="px-3 py-3">Stripe</td>
                   </tr>
 
-                  {/* Advertising — not active */}
+                  {/* Advertising - not active */}
                   <tr className="opacity-60">
                     <td className="px-3 py-3 font-mono text-amber-400">
                       Google AdSense cookies
@@ -287,7 +287,7 @@ export default function CookiesPage() {
               <div className="rounded-xl border border-white/10 bg-white/5 p-5">
                 <div className="mb-2 flex items-center">
                   <h3 className="font-semibold text-white">Strictly Necessary</h3>
-                  <Pill color="green">Always on — cannot be disabled</Pill>
+                  <Pill color="green">Always on - cannot be disabled</Pill>
                 </div>
                 <p>
                   These make Guesshh function. Without them, core features like premium subscription
@@ -298,7 +298,7 @@ export default function CookiesPage() {
                 <p className="mt-2">
                   All strictly necessary items are stored in your browser&rsquo;s{" "}
                   <code className="rounded bg-white/10 px-1">localStorage</code>, not as HTTP
-                  cookies, meaning they are only accessible to Guesshh scripts — not sent with
+                  cookies, meaning they are only accessible to Guesshh scripts - not sent with
                   every HTTP request.
                 </p>
               </div>
@@ -312,7 +312,7 @@ export default function CookiesPage() {
                   <Pill color="zinc">Consent required</Pill>
                 </div>
                 <p>
-                  We use GA4 via Google Tag Manager to understand how players use Guesshh — which
+                  We use GA4 via Google Tag Manager to understand how players use Guesshh - which
                   screens they visit, how often games are started, and where drop-offs occur. This
                   helps us improve the game. All data is pseudonymous; IP addresses are anonymised
                   before storage. GA4 analytics cookies are only set if you accept via our cookie
@@ -377,12 +377,12 @@ export default function CookiesPage() {
                 <p className="mt-2">When AdSense becomes active:</p>
                 <ul className="mt-2 list-disc space-y-1 pl-5">
                   <li>
-                    <strong className="text-white">Personalised ads</strong> — Google sets tracking
+                    <strong className="text-white">Personalised ads</strong> - Google sets tracking
                     cookies to show relevant ads based on your interests. Requires your explicit
                     consent via our banner.
                   </li>
                   <li>
-                    <strong className="text-white">Non-personalised ads</strong> — Context-based
+                    <strong className="text-white">Non-personalised ads</strong> - Context-based
                     ads with no tracking cookies. Available without consent.
                   </li>
                 </ul>
@@ -399,7 +399,7 @@ export default function CookiesPage() {
           </section>
 
           {/* ── DEFAULT COOKIE BEHAVIOR ─────────────────────────────────── */}
-          {/* ↓↓↓ NEW SECTION — added March 2026 ↓↓↓ */}
+          {/* ↓↓↓ NEW SECTION - added March 2026 ↓↓↓ */}
           <section>
             <SectionHeading id="default-behavior">Default Cookie Behavior</SectionHeading>
             <div className="space-y-3 rounded-xl border border-[#22c55e]/25 bg-[#22c55e]/5 p-5">
@@ -414,8 +414,8 @@ export default function CookiesPage() {
               </p>
               <p>
                 You may use{" "}
-                <strong className="text-white">all core features of Guesshh</strong> — including
-                multiplayer, premium subscriptions, and all game categories — without accepting
+                <strong className="text-white">all core features of Guesshh</strong> - including
+                multiplayer, premium subscriptions, and all game categories - without accepting
                 analytics or advertising cookies. Declining optional cookies has no impact on game
                 functionality.
               </p>
@@ -446,7 +446,7 @@ export default function CookiesPage() {
                 <span className="font-medium text-white">
                   Device ID &amp; preferences (localStorage):
                 </span>{" "}
-                Stored until you clear localStorage — no automatic expiry. Note: clearing your{" "}
+                Stored until you clear localStorage - no automatic expiry. Note: clearing your{" "}
                 <code className="rounded bg-white/10 px-1">device_id</code> removes premium access
                 from this device.
               </li>
@@ -564,7 +564,7 @@ export default function CookiesPage() {
             <p className="mt-3 rounded-lg border border-amber-500/20 bg-amber-500/5 p-3 text-amber-400">
               ⚠ <strong>Warning:</strong> Deleting your{" "}
               <code className="rounded bg-white/10 px-1">device_id</code> will remove premium
-              access from this device. Your subscription remains active in our system — contact{" "}
+              access from this device. Your subscription remains active in our system - contact{" "}
               <a href="mailto:support@guesshh.com" className="text-[#22c55e] hover:underline">
                 support@guesshh.com
               </a>{" "}
@@ -634,7 +634,7 @@ export default function CookiesPage() {
               You can update your analytics cookie consent at any time. Click below to re-open the
               preferences panel, or clear the{" "}
               <code className="rounded bg-white/10 px-1">guesshh_landing_consent</code> localStorage
-              item as described above — the banner will reappear on your next visit.
+              item as described above - the banner will reappear on your next visit.
             </p>
             <button
               onClick={openPreferences}
