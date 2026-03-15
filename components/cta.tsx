@@ -28,7 +28,7 @@ export function CTA() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
             Gather your friends and start a game in seconds. No sign-up, no
-            download — just pure social deduction chaos.
+            download - just pure social deduction chaos.
           </p>
           <a
             href="https://play.guesshh.com"
