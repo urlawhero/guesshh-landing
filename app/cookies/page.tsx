@@ -24,7 +24,9 @@ const Pill = ({
     blue: "bg-blue-500/15 text-blue-400",
   }
   return (
-    <span className={`ml-2 inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${styles[color]}`}>
+    <span
+      className={`ml-2 inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${styles[color]}`}
+    >
       {children}
     </span>
   )
@@ -74,9 +76,9 @@ export default function CookiesPage() {
             delete it.
           </p>
 
-          {/* Full cookie table */}
+          {/* ── Full cookie table ───────────────────────────────────────── */}
           <section>
-            <SectionHeading id="cookie-table">Full Cookie & Storage Reference</SectionHeading>
+            <SectionHeading id="cookie-table">Full Cookie &amp; Storage Reference</SectionHeading>
             <p className="mb-4">
               The table below lists every cookie and localStorage item currently in use or planned
               for Guesshh across both{" "}
@@ -160,7 +162,8 @@ export default function CookiesPage() {
                     <td className="px-3 py-3">
                       Records whether you accepted or declined optional cookies and the timestamp
                       of that choice, so we don&rsquo;t show the consent banner unnecessarily.
-                      Stores a JSON object with keys: <code className="rounded bg-white/10 px-1">consent_given</code>,{" "}
+                      Stores a JSON object with keys:{" "}
+                      <code className="rounded bg-white/10 px-1">consent_given</code>,{" "}
                       <code className="rounded bg-white/10 px-1">analytics</code>, and{" "}
                       <code className="rounded bg-white/10 px-1">consent_date</code>.
                     </td>
@@ -249,7 +252,7 @@ export default function CookiesPage() {
                     <td className="px-3 py-3">Stripe</td>
                   </tr>
 
-                  {/* Advertising - not active */}
+                  {/* Advertising — not active */}
                   <tr className="opacity-60">
                     <td className="px-3 py-3 font-mono text-amber-400">
                       Google AdSense cookies
@@ -275,7 +278,7 @@ export default function CookiesPage() {
             </div>
           </section>
 
-          {/* Category explanations */}
+          {/* ── Cookie categories explained ─────────────────────────────── */}
           <section>
             <SectionHeading id="categories">Cookie Categories Explained</SectionHeading>
             <div className="space-y-4">
@@ -288,15 +291,15 @@ export default function CookiesPage() {
                 </div>
                 <p>
                   These make Guesshh function. Without them, core features like premium subscription
-                  verification, multiplayer connectivity, and your language preference would not work.
-                  Because they are essential to the service you have requested, we do not require your
-                  consent to set them (Recital 25 of the ePrivacy Directive).
+                  verification, multiplayer connectivity, and your language preference would not
+                  work. Because they are essential to the service you have requested, we do not
+                  require your consent to set them (Recital 25 of the ePrivacy Directive).
                 </p>
                 <p className="mt-2">
                   All strictly necessary items are stored in your browser&rsquo;s{" "}
                   <code className="rounded bg-white/10 px-1">localStorage</code>, not as HTTP
-                  cookies, meaning they are only accessible to Guesshh scripts — not sent with every
-                  HTTP request.
+                  cookies, meaning they are only accessible to Guesshh scripts — not sent with
+                  every HTTP request.
                 </p>
               </div>
 
@@ -304,7 +307,7 @@ export default function CookiesPage() {
               <div className="rounded-xl border border-white/10 bg-white/5 p-5">
                 <div className="mb-2 flex items-center">
                   <h3 className="font-semibold text-white">
-                    Analytics (Google Analytics 4 & GTM)
+                    Analytics (Google Analytics 4 &amp; GTM)
                   </h3>
                   <Pill color="zinc">Consent required</Pill>
                 </div>
@@ -316,9 +319,10 @@ export default function CookiesPage() {
                   consent banner.
                 </p>
                 <p className="mt-2">
-                  We operate under <strong className="text-white">Google Consent Mode v2</strong>,
-                  which means analytics is blocked by default until you explicitly consent. Even
-                  after consent, no personally identifiable data is sent to Google.
+                  We operate under{" "}
+                  <strong className="text-white">Google Consent Mode v2</strong>, which means
+                  analytics is blocked by default until you explicitly consent. Even after consent,
+                  no personally identifiable data is sent to Google.
                 </p>
                 <p className="mt-2">
                   You can opt out at any time at{" "}
@@ -330,7 +334,7 @@ export default function CookiesPage() {
                   >
                     tools.google.com/dlpage/gaoptout
                   </a>{" "}
-                  or by withdrawing consent via our cookie banner below.
+                  or by withdrawing consent via our cookie banner.
                 </p>
               </div>
 
@@ -367,8 +371,8 @@ export default function CookiesPage() {
                 <p>
                   The free tier of Guesshh will be supported by advertisements served by Google
                   AdSense. As of the date of this policy, AdSense is{" "}
-                  <strong className="text-white">not enabled</strong> and no advertising cookies are
-                  being set on your device.
+                  <strong className="text-white">not enabled</strong> and no advertising cookies
+                  are being set on your device.
                 </p>
                 <p className="mt-2">When AdSense becomes active:</p>
                 <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -378,8 +382,8 @@ export default function CookiesPage() {
                     consent via our banner.
                   </li>
                   <li>
-                    <strong className="text-white">Non-personalised ads</strong> — Context-based ads
-                    with no tracking cookies. Available without consent.
+                    <strong className="text-white">Non-personalised ads</strong> — Context-based
+                    ads with no tracking cookies. Available without consent.
                   </li>
                 </ul>
                 <p className="mt-2">
@@ -394,7 +398,43 @@ export default function CookiesPage() {
             </div>
           </section>
 
-          {/* How long */}
+          {/* ── DEFAULT COOKIE BEHAVIOR ─────────────────────────────────── */}
+          {/* ↓↓↓ NEW SECTION — added March 2026 ↓↓↓ */}
+          <section>
+            <SectionHeading id="default-behavior">Default Cookie Behavior</SectionHeading>
+            <div className="space-y-3 rounded-xl border border-[#22c55e]/25 bg-[#22c55e]/5 p-5">
+              <p>
+                If you do not interact with our cookie consent banner,{" "}
+                <strong className="text-white">
+                  only strictly necessary cookies will be active
+                </strong>
+                . No analytics or advertising cookies will be set until you explicitly accept them
+                via the consent banner. This is the default state every time you visit Guesshh for
+                the first time or after clearing your browser data.
+              </p>
+              <p>
+                You may use{" "}
+                <strong className="text-white">all core features of Guesshh</strong> — including
+                multiplayer, premium subscriptions, and all game categories — without accepting
+                analytics or advertising cookies. Declining optional cookies has no impact on game
+                functionality.
+              </p>
+              <p>
+                Your choice can be changed at any time via the{" "}
+                <strong className="text-white">&ldquo;Cookie Settings&rdquo;</strong> option in the
+                app settings, the footer of this page, or by clicking the button below.
+              </p>
+              <button
+                onClick={openPreferences}
+                className="mt-1 rounded-full border border-[#22c55e]/50 bg-transparent px-5 py-2 text-sm font-semibold text-[#22c55e] transition-colors hover:bg-[#22c55e]/10"
+              >
+                Open Cookie Settings
+              </button>
+            </div>
+          </section>
+          {/* ↑↑↑ END NEW SECTION ↑↑↑ */}
+
+          {/* ── How long ────────────────────────────────────────────────── */}
           <section>
             <SectionHeading id="duration">How Long Are Cookies Stored?</SectionHeading>
             <ul className="list-disc space-y-2 pl-5">
@@ -404,7 +444,7 @@ export default function CookiesPage() {
               </li>
               <li>
                 <span className="font-medium text-white">
-                  Device ID & preferences (localStorage):
+                  Device ID &amp; preferences (localStorage):
                 </span>{" "}
                 Stored until you clear localStorage — no automatic expiry. Note: clearing your{" "}
                 <code className="rounded bg-white/10 px-1">device_id</code> removes premium access
@@ -421,7 +461,8 @@ export default function CookiesPage() {
               </li>
               <li>
                 <span className="font-medium text-white">
-                  Stripe (<code className="rounded bg-white/10 px-1">__stripe_mid</code>):
+                  Stripe (
+                  <code className="rounded bg-white/10 px-1">__stripe_mid</code>):
                 </span>{" "}
                 1 year, but only set during the active checkout flow.
               </li>
@@ -443,12 +484,12 @@ export default function CookiesPage() {
             </ul>
           </section>
 
-          {/* Managing */}
+          {/* ── Managing ────────────────────────────────────────────────── */}
           <section>
             <SectionHeading id="managing">Managing Cookies in Your Browser</SectionHeading>
             <p className="mb-4">
-              You can control and delete cookies at any time through your browser settings. Note that
-              deleting strictly necessary localStorage items will affect game functionality.
+              You can control and delete cookies at any time through your browser settings. Note
+              that deleting strictly necessary localStorage items will affect game functionality.
             </p>
 
             <h3 className="mb-3 text-sm font-semibold text-white">
@@ -457,11 +498,11 @@ export default function CookiesPage() {
             <ul className="list-disc space-y-2 pl-5">
               <li>
                 <span className="font-medium text-white">Chrome:</span> Settings → Privacy and
-                security → Cookies and other site data → See all site data and permissions → Search
-                for play.guesshh.com → Delete
+                security → Cookies and other site data → See all site data and permissions →
+                Search for play.guesshh.com → Delete
               </li>
               <li>
-                <span className="font-medium text-white">Firefox:</span> Settings → Privacy &
+                <span className="font-medium text-white">Firefox:</span> Settings → Privacy &amp;
                 Security → Cookies and Site Data → Manage Data → Search guesshh.com → Remove
               </li>
               <li>
@@ -492,10 +533,7 @@ export default function CookiesPage() {
             <ol className="list-decimal space-y-1 pl-5">
               <li>
                 Open{" "}
-                <a
-                  href="https://play.guesshh.com"
-                  className="text-[#22c55e] hover:underline"
-                >
+                <a href="https://play.guesshh.com" className="text-[#22c55e] hover:underline">
                   play.guesshh.com
                 </a>{" "}
                 in your browser.
@@ -527,10 +565,7 @@ export default function CookiesPage() {
               ⚠ <strong>Warning:</strong> Deleting your{" "}
               <code className="rounded bg-white/10 px-1">device_id</code> will remove premium
               access from this device. Your subscription remains active in our system — contact{" "}
-              <a
-                href="mailto:support@guesshh.com"
-                className="text-[#22c55e] hover:underline"
-              >
+              <a href="mailto:support@guesshh.com" className="text-[#22c55e] hover:underline">
                 support@guesshh.com
               </a>{" "}
               if you need help restoring access.
@@ -554,7 +589,7 @@ export default function CookiesPage() {
             </p>
           </section>
 
-          {/* GDPR */}
+          {/* ── GDPR ────────────────────────────────────────────────────── */}
           <section>
             <SectionHeading id="your-rights">Your Rights (GDPR)</SectionHeading>
             <p className="mb-3">If you are in the EU, you have the right to:</p>
@@ -590,7 +625,7 @@ export default function CookiesPage() {
             </p>
           </section>
 
-          {/* Change preferences */}
+          {/* ── Change preferences ──────────────────────────────────────── */}
           <section>
             <SectionHeading id="change-preferences">
               Changing Your Cookie Preferences
@@ -609,7 +644,7 @@ export default function CookiesPage() {
             </button>
           </section>
 
-          {/* Further reading */}
+          {/* ── Further reading ─────────────────────────────────────────── */}
           <section>
             <SectionHeading id="further">Further Reading</SectionHeading>
             <ul className="list-disc space-y-2 pl-5">
