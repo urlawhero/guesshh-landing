@@ -2,6 +2,7 @@ import SeoPageLayout from "@/components/SeoPageLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/seo/fr/jeux-entre-amis" },
   title: "Les Meilleurs Jeux à Jouer Entre Amis (Sans Téléchargement)",
   description: "Découvrez Guesshh, le meilleur jeu de société et de bluff gratuit sur mobile. Jouez de 3 à 25 joueurs sans télécharger d'application.",
 };

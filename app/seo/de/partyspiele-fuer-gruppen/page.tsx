@@ -2,7 +2,8 @@ import SeoPageLayout from "@/components/SeoPageLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Die Besten Partyspiele für Gruppen am Handy | Guesshh",
+  alternates: { canonical: "/seo/de/partyspiele-fuer-gruppen" },
+  title: "Gruppenspiele App: Partyspiele Online mit Freunden",
   description: "Suchst du kostenlose Online-Spiele mit Freunden? Entdecke Guesshh, das Social-Deduction-Spiel im Browser. Keine App nötig, für 3 bis 25 Spieler.",
 };
 

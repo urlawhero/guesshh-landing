@@ -5,6 +5,7 @@ import Script from "next/script"
 import "./globals.css"
 import { CookieConsentProvider } from "@/hooks/useCookieConsent"
 import { CookieBanner } from "@/components/CookieBanner"
+import { UtmLinkTagger } from "@/components/utm-link-tagger"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
@@ -17,11 +18,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Guesshh | Find the Spy & Impostor Party Game",
+    default: "Guesshh: Free Online Spy Game to Play With Friends",
     template: "%s | Guesshh",
   },
   description:
-    "Play Guesshh, the ultimate free online social deduction party game. Find the spy or impostor among your friends in this browser game for 3-25 players. No downloads, instant fun.",
+    "Guesshh is a free online social deduction game. Find the spy among your friends in your browser: 3-25 players, no download, no account.",
   keywords: [
     "social deduction game",
     "impostor game",
@@ -188,6 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <CookieConsentProvider>
           {children}
           <CookieBanner />
+          <UtmLinkTagger />
         </CookieConsentProvider>
 
         <Analytics />

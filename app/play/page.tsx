@@ -3,6 +3,8 @@ import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/play" },
+  robots: { index: false, follow: true },
   title: "Coming Soon",
   description:
     "Guesshh is almost ready. Stay tuned for the ultimate social deduction party game.",

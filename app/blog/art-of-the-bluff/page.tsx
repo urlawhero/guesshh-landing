@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "The Art of the Bluff: How to Win as the Spy | Guesshh",
+  alternates: { canonical: "/blog/art-of-the-bluff" },
+    title: "The Art of the Bluff: How to Win as the Spy",
     description: "Master the secrets behind becoming an unstoppable spy in Guesshh.",
 }
 

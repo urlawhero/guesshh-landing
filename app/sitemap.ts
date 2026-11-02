@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://guesshh.com'
-  const lastModified = new Date()
+  const lastModified = new Date('2026-11-02')
 
   return [
     // Core Pages
@@ -12,13 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    
     {
-      url: `${baseUrl}/play`,
+      url: `${baseUrl}/how-to-play`,
       lastModified,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
-    
+    {
+      url: `${baseUrl}/party-games-for-groups`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     // Blog Architecture
     {
       url: `${baseUrl}/blog`,
@@ -34,12 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/art-of-the-bluff`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/whats-new-v2`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.6,

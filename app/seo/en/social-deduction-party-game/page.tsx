@@ -2,7 +2,8 @@ import SeoPageLayout from "@/components/SeoPageLayout"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Play the Best Social Deduction Party Game Online | Guesshh",
+  alternates: { canonical: "/seo/en/social-deduction-party-game" },
+  title: "Online Social Deduction Game: Play Free With Friends",
   description:
     "Find the spy or impostor, bluff your friends, and win the round. Play the ultimate free online social deduction party game directly in your browser.",
 }

@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog/how-to-host-game-night" },
     title: "How to Host the Perfect Game Night | Guesshh Blog",
     description: "Learn the essential tips for hosting a successful game night, from choosing the right games to setting the mood.",
 }

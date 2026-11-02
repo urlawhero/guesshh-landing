@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Service - Guesshh",
   description:
     "Terms and conditions for using Guesshh. Covers premium purchases via Stripe, EU consumer rights, platform-specific payment rules, and acceptable use.",

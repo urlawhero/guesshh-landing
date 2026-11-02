@@ -2,8 +2,9 @@ import SeoPageLayout from "@/components/SeoPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "The Best Free Spyfall Alternative | Guesshh",
-    description: "Looking for a free Spyfall alternative? Guesshh is the ultimate online social deduction game you can play in your browser with up to 25 friends.",
+  alternates: { canonical: "/seo/en/spyfall-alternative" },
+    title: "Spyfall Alternative: Play Online Free, No Download (3-25)",
+    description: "Want Spyfall without the cards or app? Guesshh is a free online Spyfall alternative: share a 6-letter code and play in your browser with up to 25 friends.",
 }
 
 export default function SpyfallAlternativePage() {

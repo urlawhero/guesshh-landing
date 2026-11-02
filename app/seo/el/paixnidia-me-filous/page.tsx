@@ -2,7 +2,8 @@ import SeoPageLayout from "@/components/SeoPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Τα Καλύτερα Παιχνίδια για Παρέα | Guesshh",
+  alternates: { canonical: "/seo/el/paixnidia-me-filous" },
+    title: "Παιχνίδια για την Παρέα Online: Δωρεάν",
     description: "Ανακαλύψτε τα καλύτερα παιχνίδια για παρέα online. Το Guesshh είναι ένα δωρεάν παιχνίδι μυστηρίου και μπλόφας για εσάς και τους φίλους σας.",
 }
 

@@ -2,7 +2,8 @@ import SeoPageLayout from "@/components/SeoPageLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I Migliori Giochi da Fare in Gruppo sul Telefono | Guesshh",
+  alternates: { canonical: "/seo/it/giochi-da-fare-in-gruppo" },
+  title: "App Giochi da Fare in Gruppo: Gioca Online Gratis",
   description: "Cerchi un gioco divertente da fare con gli amici? Gioca a Guesshh, il miglior gioco di deduzione sociale. Nessuna app da scaricare, gioca subito gratis.",
 };
 

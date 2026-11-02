@@ -2,6 +2,7 @@ import SeoPageLayout from "@/components/SeoPageLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/seo/es/juegos-para-jugar-con-amigos" },
   title: "Los Mejores Juegos Para Jugar Con Amigos (Sin Descargar)",
   description: "Descubre Guesshh, el mejor juego online de deducción social. Encuentra al espía entre tus amigos. Juega gratis desde tu móvil sin descargar nada.",
 };

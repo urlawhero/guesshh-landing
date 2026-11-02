@@ -2,8 +2,9 @@ import SeoPageLayout from "@/components/SeoPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Best Games to Play with Friends Online | Guesshh",
-    description: "Discover the best games to play with friends online. Guesshh is a free, browser-based social deduction party game for any group size.",
+  alternates: { canonical: "/seo/en/games-to-play-with-friends" },
+    title: "10 Free Online Games to Play With Friends (No Download)",
+    description: "Looking for games to play with friends online? 10 free browser games for any group: Guesshh, skribbl.io, Gartic Phone, Codenames and more. No app needed.",
 }
 
 export default function GamesWithFriendsPage() {

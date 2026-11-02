@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog" },
     title: "Guesshh Blog | Stories, Tips & Updates",
     description: "The latest news, strategy guides, and party tips from the Guesshh team.",
 }
