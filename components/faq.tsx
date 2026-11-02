@@ -9,6 +9,11 @@ import {
 
 const faqs = [
   {
+    question: "What is Guesshh, and how is it spelled?",
+    answer:
+      "Guesshh (sometimes typed as Guess HH, Guessh, Gesshh or guesshh.com) is a free online spy and social deduction game. You play it in a browser at play.guesshh.com, with 3 to 25 players and no download or account.",
+  },
+  {
     question: "Is Guesshh free to play?",
     answer:
       "Yes \u2014 100% free. No account needed, no subscription, no hidden costs. Just open the link and play.",

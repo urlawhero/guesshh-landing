@@ -1,15 +1,17 @@
 import SeoPageLayout from "@/components/SeoPageLayout";
-import { Metadata } from "next";
+import { Metadata } from "next"
+import { localeAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/seo/it/giochi-da-fare-in-gruppo" },
+  alternates: localeAlternates("/seo/it/giochi-da-fare-in-gruppo"),
   title: "App Giochi da Fare in Gruppo: Gioca Online Gratis",
   description: "Cerchi un gioco divertente da fare con gli amici? Gioca a Guesshh, il miglior gioco di deduzione sociale. Nessuna app da scaricare, gioca subito gratis.",
 };
 
 export default function GiochiInGruppoPage() {
   return (
-    <SeoPageLayout 
+    <SeoPageLayout
+            path="/seo/it/giochi-da-fare-in-gruppo" 
       title="Il Gioco Perfetto da Fare in Gruppo" 
       subtitle="Siete al bar, in casa o su una chiamata Discord e non sapete cosa fare? Giocate direttamente dal browser del vostro telefono. Nessuna app da scaricare."
       lang="it"

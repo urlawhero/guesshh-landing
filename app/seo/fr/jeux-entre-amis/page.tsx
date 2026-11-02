@@ -1,15 +1,17 @@
 import SeoPageLayout from "@/components/SeoPageLayout";
-import { Metadata } from "next";
+import { Metadata } from "next"
+import { localeAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/seo/fr/jeux-entre-amis" },
+  alternates: localeAlternates("/seo/fr/jeux-entre-amis"),
   title: "Les Meilleurs Jeux à Jouer Entre Amis (Sans Téléchargement)",
   description: "Découvrez Guesshh, le meilleur jeu de société et de bluff gratuit sur mobile. Jouez de 3 à 25 joueurs sans télécharger d'application.",
 };
 
 export default function JeuxEntreAmisPage() {
   return (
-    <SeoPageLayout 
+    <SeoPageLayout
+            path="/seo/fr/jeux-entre-amis" 
       title="Les Meilleurs Jeux à Jouer Entre Amis" 
       subtitle="Pas besoin de télécharger d'application. Rejoignez une partie directement depuis votre navigateur et trouvez l'espion."
       lang="fr"

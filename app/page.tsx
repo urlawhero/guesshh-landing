@@ -19,7 +19,7 @@ const webAppJsonLd = {
   offers: {
     "@type": "Offer",
     price: "0",
-    priceCurrency: "USD",
+    priceCurrency: "EUR",
   },
   description:
     "Free online multiplayer social deduction party game. Find the spy or bluff your way to victory with up to 25 players.",
@@ -55,10 +55,41 @@ const softwareAppJsonLd = {
   },
 }
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Guesshh",
+  alternateName: ["Guesshh game", "Guesshh app", "Guess HH", "Guessh", "Gesshh"],
+  url: "https://guesshh.com",
+  logo: "https://guesshh.com/icon-512.png",
+  parentOrganization: {
+    "@type": "Organization",
+    name: "For You Digital Solutions",
+    url: "https://foryoudigitalsolutions.com",
+  },
+}
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Guesshh",
+  alternateName: ["Guesshh game", "Guesshh app", "Guess HH", "Guessh", "Gesshh"],
+  url: "https://guesshh.com",
+  inLanguage: "en",
+}
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Guesshh, and how is it spelled?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Guesshh (sometimes typed as Guess HH, Guessh, Gesshh or guesshh.com) is a free online spy and social deduction game. You play it in a browser at play.guesshh.com, with 3 to 25 players and no download or account.",
+      },
+    },
     {
       "@type": "Question",
       name: "Is Guesshh free to play?",
@@ -136,6 +167,14 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       <script
         type="application/ld+json"

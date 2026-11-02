@@ -9,6 +9,12 @@ const siteLinks = [
   { label: "Features", href: "/#features" },
   { label: "FAQ", href: "/#faq" },
   { label: "Play", href: "https://play.guesshh.com" },
+  { label: "Games to Play With Friends", href: "/seo/en/games-to-play-with-friends" },
+  { label: "Spyfall Alternative", href: "/seo/en/spyfall-alternative" },
+  { label: "Online Social Deduction Game", href: "/online-social-deduction-game" },
+  { label: "Games Like Spyfall", href: "/games-like-spyfall" },
+  { label: "Impostor Game Online", href: "/impostor-game-online" },
+  { label: "How to Play", href: "/how-to-play" },
 ]
 
 const legalLinks = [

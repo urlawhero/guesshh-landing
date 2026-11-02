@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { SeoPageLayout } from "@/components/seo-page-layout"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: "How to Play Guesshh",
@@ -14,12 +15,28 @@ export const metadata: Metadata = {
   },
 }
 
+const howTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to play Guesshh",
+  description: "Set up and play a round of Guesshh, the free online social deduction game.",
+  totalTime: "PT10M",
+  step: [
+    { "@type": "HowToStep", name: "Create a room", text: "Open play.guesshh.com and tap Create." },
+    { "@type": "HowToStep", name: "Invite your friends", text: "Share the 6-letter room code or QR code. Friends tap Join and enter the code." },
+    { "@type": "HowToStep", name: "Start the game", text: "The host selects a category and taps Start Game. Each player privately views their role." },
+    { "@type": "HowToStep", name: "Discuss", text: "Players take turns asking questions. Innocents prove they know the word, and the spy tries to work it out." },
+    { "@type": "HowToStep", name: "Vote", text: "Everyone votes for who they think is the spy. A caught spy gets one final guess at the secret word." },
+  ],
+}
+
 export default function HowToPlayPage() {
   return (
     <SeoPageLayout
       title="How to Play Guesshh"
       description="Everything you need to know to set up and play your first game - from creating a room to catching the spy."
     >
+      <JsonLd data={howTo} />
       <h2>What Is Guesshh?</h2>
       <p>
         Guesshh is a free online social deduction party game for 3 to 25 players. One player is secretly

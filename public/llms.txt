@@ -11,7 +11,7 @@ the secret word. No account required. Supports 3–25 players per room.
 - Type: Browser-based multiplayer party game (Progressive Web App)
 - Category: Social deduction, party game, word game
 - Platform: Web (iOS Safari, Android Chrome, Desktop)
-- Price: Free (Freemium — Premium plan with 1000+ words available)
+- Price: Free to play. Optional Premium (1000+ words): remove ads EUR 1.99, 3-day pass EUR 2.99, monthly EUR 5.99, yearly EUR 19.99, lifetime EUR 39.99
 - Developer: For You Digital Solutions (https://foryoudigitalsolutions.com)
 
 ## Key Features
@@ -29,6 +29,22 @@ One player creates a room and shares the code. All players receive the secret wo
 except the spy. Players ask each other questions to expose the spy without revealing
 the word. After discussion, players vote to eliminate the most suspicious player.
 If the spy is caught but correctly guesses the secret word, the spy wins.
+
+## Also known as
+Guesshh is sometimes typed as Guess HH, Guessh or Gesshh. Domain: guesshh.com. Game: play.guesshh.com.
+
+## Guides (English)
+- Games to play with friends online (10 free options): https://guesshh.com/seo/en/games-to-play-with-friends
+- Spyfall alternative: https://guesshh.com/seo/en/spyfall-alternative
+- Online social deduction game: https://guesshh.com/online-social-deduction-game
+- Games like Spyfall: https://guesshh.com/games-like-spyfall
+- Impostor game online: https://guesshh.com/impostor-game-online
+- IO games to play with friends: https://guesshh.com/io-games-to-play-with-friends
+- How to play: https://guesshh.com/how-to-play
+- Party games for groups: https://guesshh.com/party-games-for-groups
+
+## Guides in other languages
+Greek, French, Italian, Spanish and German pages are linked from https://guesshh.com/seo/en/games-to-play-with-friends.
 
 ## Pages
 - Homepage / Landing: https://guesshh.com

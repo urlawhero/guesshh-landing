@@ -47,6 +47,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // English SEO Landing Pages
     {
+      url: `${baseUrl}/online-social-deduction-game`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/games-like-spyfall`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/impostor-game-online`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/io-games-to-play-with-friends`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/seo/en/spyfall-alternative`,
       lastModified,
       changeFrequency: 'monthly',
@@ -54,12 +78,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/seo/en/games-to-play-with-friends`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/seo/en/social-deduction-party-game`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.6,

@@ -1,15 +1,17 @@
 import SeoPageLayout from "@/components/SeoPageLayout";
-import { Metadata } from "next";
+import { Metadata } from "next"
+import { localeAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/seo/es/juegos-para-jugar-con-amigos" },
+  alternates: localeAlternates("/seo/es/juegos-para-jugar-con-amigos"),
   title: "Los Mejores Juegos Para Jugar Con Amigos (Sin Descargar)",
   description: "Descubre Guesshh, el mejor juego online de deducción social. Encuentra al espía entre tus amigos. Juega gratis desde tu móvil sin descargar nada.",
 };
 
 export default function JuegosConAmigosPage() {
   return (
-    <SeoPageLayout 
+    <SeoPageLayout
+            path="/seo/es/juegos-para-jugar-con-amigos" 
       title="El Juego Definitivo Para Jugar Con Amigos" 
       subtitle="Sin descargas. Sin cuentas. Crea una sala en segundos y descubre quién de tus amigos es el mejor mintiendo."
       lang="es"

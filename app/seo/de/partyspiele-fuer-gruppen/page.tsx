@@ -1,15 +1,17 @@
 import SeoPageLayout from "@/components/SeoPageLayout";
-import { Metadata } from "next";
+import { Metadata } from "next"
+import { localeAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/seo/de/partyspiele-fuer-gruppen" },
+  alternates: localeAlternates("/seo/de/partyspiele-fuer-gruppen"),
   title: "Gruppenspiele App: Partyspiele Online mit Freunden",
   description: "Suchst du kostenlose Online-Spiele mit Freunden? Entdecke Guesshh, das Social-Deduction-Spiel im Browser. Keine App nötig, für 3 bis 25 Spieler.",
 };
 
 export default function PartyspieleGruppenPage() {
   return (
-    <SeoPageLayout 
+    <SeoPageLayout
+            path="/seo/de/partyspiele-fuer-gruppen" 
       title="Das Ultimative Partyspiel für deine Gruppe" 
       subtitle="Finde den Spion, bluffe deine Freunde und gewinne. Keine App-Downloads, keine Accounts – einfach sofort im Browser spielen."
       lang="de"
