@@ -167,6 +167,26 @@ export default function SeoPageLayout({
 
       <footer className="border-t border-white/10 py-12">
         <div className="container mx-auto px-6 text-center">
+          <nav
+            aria-label="Guesshh blog"
+            className="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm"
+          >
+            <Link href="/blog" className="text-slate-300 transition-colors hover:text-white">
+              Blog
+            </Link>
+            <Link
+              href="/blog/how-to-host-game-night"
+              className="text-slate-300 transition-colors hover:text-white"
+            >
+              How to Host a Game Night
+            </Link>
+            <Link
+              href="/blog/art-of-the-bluff"
+              className="text-slate-300 transition-colors hover:text-white"
+            >
+              The Art of the Bluff
+            </Link>
+          </nav>
           <p className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} Guesshh. All rights reserved.
           </p>

@@ -28,6 +28,13 @@ export default function BlogPostPage() {
                     <p>Don't be too quiet, or people will suspect you. Don't be too loud, or you'll draw attention. Agree with the general consensus early on. If someone makes a vague statement about the word, nod and say, "Exactly, that's what I was thinking."</p>
                     <h2>3. The Final Guess is Your Safety Net</h2>
                     <p>Remember, in Guesshh, even if you are caught, you can still win if you guess the secret word. Use the entire game to gather clues. If they catch you, piece together the hints and steal the victory!</p>
+                    <h2>Keep Reading</h2>
+                    <ul>
+                        <li><Link href="/how-to-play">How to play Guesshh</Link></li>
+                        <li><Link href="/blog/how-to-host-game-night">How to host the perfect game night</Link></li>
+                        <li><Link href="/games-like-spyfall">Games like Spyfall</Link></li>
+                        <li><Link href="/blog">All Guesshh blog articles</Link></li>
+                    </ul>
                 </main>
                 <div className="mx-auto max-w-3xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 text-center">
                     <h3 className="mb-4 text-2xl font-bold text-white">Think you can fool your friends?</h3>

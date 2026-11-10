@@ -5,6 +5,7 @@ import { GamePreview } from "@/components/game-preview"
 import { Features } from "@/components/features"
 import { PlayYourWay } from "@/components/play-your-way"
 import { FAQ } from "@/components/faq"
+import { BlogTeaser } from "@/components/blog-teaser"
 import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
 
@@ -188,6 +189,7 @@ export default function Home() {
         <Features />
         <PlayYourWay />
         <FAQ />
+        <BlogTeaser />
         <CTA />
       </main>
       <Footer />

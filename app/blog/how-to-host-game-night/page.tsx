@@ -60,6 +60,14 @@ export default function BlogPostPage() {
                     <p>
                         Remember: the best part of any game night is the conversation that happens <em>between</em> the turns.
                     </p>
+
+                    <h2>Keep Reading</h2>
+                    <ul>
+                        <li><Link href="/how-to-play">How to play Guesshh</Link></li>
+                        <li><Link href="/party-games-for-groups">Party games for groups</Link></li>
+                        <li><Link href="/blog/art-of-the-bluff">The Art of the Bluff: how to win as the spy</Link></li>
+                        <li><Link href="/blog">All Guesshh blog articles</Link></li>
+                    </ul>
                 </main>
 
                 {/* CTA Card */}

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://guesshh.com'
-  const lastModified = new Date('2026-11-02')
+  const lastModified = new Date('2026-11-09')
 
   return [
     // Core Pages

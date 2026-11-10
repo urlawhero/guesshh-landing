@@ -15,6 +15,9 @@ const siteLinks = [
   { label: "Games Like Spyfall", href: "/games-like-spyfall" },
   { label: "Impostor Game Online", href: "/impostor-game-online" },
   { label: "How to Play", href: "/how-to-play" },
+  { label: "Blog", href: "/blog" },
+  { label: "How to Host a Game Night", href: "/blog/how-to-host-game-night" },
+  { label: "The Art of the Bluff", href: "/blog/art-of-the-bluff" },
 ]
 
 const legalLinks = [
@@ -181,7 +184,7 @@ export function Footer() {
           <p className="text-xs text-zinc-600">
             Developed by{" "}
             <a
-              href="https://foryoudigitalsolutions.com"
+              href="https://foryoudigitalsolutions.com/en/?utm_source=guesshh&utm_medium=footer_credit&utm_campaign=project_footer&utm_content=guesshh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-600 transition-colors hover:text-green-400"
